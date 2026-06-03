@@ -7,6 +7,45 @@
 
 }
 
+/* body{
+    font-family: 'Helvetica Neue', sans-serif;
+} */
+
+/* ===========navbar style =========*/
+
+.navbar-brand img {
+    margin-left: 100px;
+}
+
+.banner-btn .btn{
+    background: #fff;
+    border-radius: 30px;
+    border: 1px solid #3150A0;
+    color: #3150A0;
+    padding: 10px 20px;
+}
+.banner-btn .btn:hover{
+    background: #3150A0;
+    border-radius: 30px;
+    border: 1px solid #3150A0;
+    color: #fff;
+    padding: 10px 20px;
+}
+.banner-btn .btn-1{
+    background: #3150A0;
+    border-radius: 30px;
+    border: 1px solid #3150A0;
+    color: #fff;
+    padding: 10px 20px;
+}
+.banner-btn .btn-1:hover{
+    background: #fff;
+    border-radius: 30px;
+    border: 1px solid #3150A0;
+    color: #3150A0;
+    padding: 10px 20px;
+}
+
 
 /*============ banner style ===========*/
 
@@ -67,8 +106,16 @@
 
 .find-job-btn {
     background: #7c88c9;
-    border: none;
+    border: 1px solid #7c88c9;
     color: #fff;
+    border-radius: 30px;
+    padding: 12px 30px;
+    font-size: 14px;
+}
+.find-job-btn:hover {
+    background: #fff;
+    border: 1px solid #7c88c9;
+    color: #7c88c9;
     border-radius: 30px;
     padding: 12px 30px;
     font-size: 14px;
@@ -77,27 +124,31 @@
 /* Recommended Jobs */
 .recommended-jobs {
     margin-top: 18px;
+    font-family: 'Helvetica Neue', sans-serif;
 }
 
-.recommended-jobs h6 {
-    font-size: 13px;
-    font-weight: 600;
+.recommended-jobs h5 {
+    font-size: 16px;
+    font-weight: 500;
     margin-bottom: 10px;
+    font-style: medium;
 }
 
 .job-tags {
     display: flex;
     flex-wrap: wrap;
     gap: 8px;
+   
 }
 
 .job-tags span {
-    padding: 6px 12px;
-    border: 1px solid #d8dcef;
+    padding: 10px 12px;
+    /* border: 1px solid #d8dcef; */
     border-radius: 20px;
     background: #fff;
-    font-size: 12px;
-    color: #6676b3;
+    font-size: 14px;
+    color: #3150A0;
+    font-family: 'Helvetica Neue', sans-serif;
 }
 
 
@@ -121,6 +172,7 @@
     font-size: 18px;
     line-height: 1.3;
     font-weight: 400;
+    margin-top: 5px;
 }
 
 .action-card.active {
@@ -131,14 +183,408 @@
     color: #4a6cf7;
 }
 
+.text-end a{
+    color: #3150A0;
+    border: 1px solid #3150A0;
+    /* padding: 6px 20px; */
+    border-radius: 30px;
+}
+.text-end a:hover{
+    color: #fff;
+    border: 1px solid #3150A0;
+    background-color: #3150A0;
+    /* padding: 6px 20px; */
+    border-radius: 30px;
+}
+
+
+
+
+
+/*---------- be ready style--------*/
+
+
+
+.icon {
+    width: 24px;
+    height: 24px;
+    flex-shrink: 0;
+}
+
+.accordion-header-custom {
+    cursor: pointer;
+}
+
+.accordion-content-custom {
+    display: none;
+    padding-left: 40px;
+}
+
+.accordion-item-custom.active .accordion-content-custom {
+    display: block;
+}
+
+.accordion-item-custom.active .bi-chevron-down {
+    transform: rotate(180deg);
+}
+
+.bi-chevron-down {
+    transition: all .3s ease;
+}
+
+
+
+.accordion-header-custom {
+    padding: 18px 20px;
+    background: #fff;
+    color: #000;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+/* Active Accordion */
+.accordion-item-custom.active .accordion-header-custom {
+    background: #3150A0;
+    color: #fff;
+}
+
+/* White text when active */
+.accordion-item-custom.active .accordion-header-custom h6,
+.accordion-item-custom.active .accordion-header-custom i {
+    color: #fff;
+}
+
+/* Optional - make image white */
+.accordion-item-custom.active .accordion-header-custom .icon {
+    filter: brightness(0) invert(1);
+}
+
+
+/*-----------top company section style -----------*/
+
+
+.company-card{
+    background:#fff;
+    border:1px solid #e5e5e5;
+    border-radius:12px;
+    transition:.3s;
+}
+
+.company-card:hover{
+    transform:translateY(-3px);
+}
+/* 
+.company-logo{
+    width:40px;
+    height:40px;
+    object-fit:contain;
+}
+
+.company-card h6{
+    font-size:14px;
+    margin:0;
+}
+
+.company-card small{
+    font-size:11px;
+    color:#666;
+} */
+
+.company-btn a{
+    background: #fff;
+    border: 1px solid #3150A0;
+    color: #3150A0;
+    border-radius: 30px;
+}
+.company-btn a:hover{
+    background: #3150A0;
+    border: 1px solid #3150A0;
+    color: #fff;
+    border-radius: 30px;
+}
+
+
+/* ===== COMPANY SLIDER ===== */
+
+.company-slider-section {
+    overflow: hidden;
+    width: 100%;
+    padding: 20px 0;
+}
+
+/* SLIDER WRAPPER */
+.slider-wrapper {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+/* TRACK */
+.slider-track {
+    display: flex;
+    gap: 20px;
+    width: max-content;
+}
+
+/* COMPANY CARD */
+.company-card {
+    min-width: 260px;
+    background: #fff;
+    border: 1px solid #e8e8e8;
+    border-radius: 14px;
+    padding: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: 0.3s;
+    flex-shrink: 0;
+}
+
+.company-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+}
+
+.company-card h6 {
+    margin: 0;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.company-card small {
+    color: #666;
+    font-size: 13px;
+}
+
+.company-logo {
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+    object-fit: cover;
+    margin-right: 12px;
+}
+
+/* RIGHT MOVING */
+.slider-right .slider-track {
+    animation: scrollRight 25s linear infinite;
+}
+
+/* LEFT MOVING */
+.slider-left .slider-track {
+    animation: scrollLeft 25s linear infinite;
+}
+
+/* CONTINUOUS RIGHT */
+@keyframes scrollRight {
+    0% {
+        transform: translateX(-50%);
+    }
+
+    100% {
+        transform: translateX(0%);
+    }
+}
+
+/* CONTINUOUS LEFT */
+@keyframes scrollLeft {
+    0% {
+        transform: translateX(0%);
+    }
+
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+/* PAUSE ON HOVER */
+.slider-wrapper:hover .slider-track {
+    animation-play-state: paused;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+
+    .company-card {
+        min-width: 220px;
+        padding: 14px;
+    }
+
+    .company-card h6 {
+        font-size: 14px;
+    }
+
+    .company-card small {
+        font-size: 12px;
+    }
+
+    .company-logo {
+        width: 42px;
+        height: 42px;
+    }
+
+    .slider-right .slider-track,
+    .slider-left .slider-track {
+        animation-duration: 18s;
+    }
+}
+
+
+
+/*------------featured style-----------*/
+
+.job-card {
+    background: #fff;
+    border: 1px solid #e7e7e7;
+    border-radius: 18px;
+    transition: .3s;
+}
+
+.job-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.06);
+}
+
+.company-logo {
+    width: 52px;
+    height: 52px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.tag {
+    border: 1px solid #e5e5e5;
+    padding: 6px 10px;
+    border-radius: 30px;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.tag img {
+    width: 14px;
+}
+
+.details-btn {
+    border: 1px solid #3150A0;
+    color: #3150A0;
+    border-radius: 30px;
+    text-decoration: none;
+    padding: 6px 20px;
+    font-size: 13px;
+    transition: .3s;
+}
+
+/* BUTTON WRAPPER */
+.more-btn-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    overflow: hidden;
+}
+
+/* BUTTON */
+.more-btn{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #3150A0;
+    color: #3150A0;
+    padding: 10px 24px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-size: 14px;
+    background: #fff;
+    transition: 0.3s;
+    white-space: nowrap;
+}
+
+.details-btn:hover  ,
+.more-btn:hover{
+    background: #3150A0;
+    color: #fff;
+}
+
+
+/*------------ career style ---------------*/
+
+.career-box{
+    background:#edf6fd;
+    border-radius:24px;
+    padding:50px;
+}
+
+.download-box{
+    max-width:420px;
+    background:#fff;
+    border-radius:50px;
+    padding:6px;
+}
+
+.input-box{
+    flex:1;
+    padding:0 14px;
+}
+
+.input-box input{
+    outline:none;
+    font-size:14px;
+}
+
+.link-btn{
+    border:1px solid #3150A0;
+    background:#3150A0;
+    color:#fff;
+    padding:12px 24px;
+    border-radius:40px;
+    font-size:14px;
+}
+.link-btn:hover{
+    border:1px solid #3150A0;
+    background:#fff;
+    color:#3150A0;
+    padding:12px 24px;
+    border-radius:40px;
+    font-size:14px;
+}
+
+.qr-card{
+    background:#fff;
+    border-radius:18px;
+    padding:18px;
+    max-width:330px;
+    box-shadow:0 8px 20px rgba(0,0,0,0.05);
+}
+.qr-card h6{
+   font-size:21px;
+   font-weight:300;
+
+}
+
+.qr-img{
+    width:120px;
+    height:120px;
+    object-fit:cover;
+}
+
+.store-img{
+    width:130px;
+    display:block;
+}
+
+
+
+
 
 
 /*----footer style------*/
 
-.footer-section {
+/* .footer-section {
     background: #efefef;
     border-top: 2px solid #7b3ff2;
-}
+} */
 
 .footer-top {
     padding: 50px 0;
@@ -180,7 +626,7 @@
 }
 
 .footer-links ul li a:hover {
-    color: #7b3ff2;
+    color: #3150A0;
 }
 
 .footer-bottom {
