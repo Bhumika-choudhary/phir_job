@@ -11,13 +11,20 @@ document.addEventListener("DOMContentLoaded", () => {
 
         header.addEventListener("click", () => {
 
-            // Close all accordions
-            items.forEach(other => {
-                other.classList.remove("active");
-            });
+            // If already active → close it
+            if (item.classList.contains("active")) {
+                item.classList.remove("active");
+            } 
+            else {
 
-            // Open clicked accordion
-            item.classList.add("active");
+                // Close all accordions
+                items.forEach(other => {
+                    other.classList.remove("active");
+                });
+
+                // Open clicked accordion
+                item.classList.add("active");
+            }
 
         });
 

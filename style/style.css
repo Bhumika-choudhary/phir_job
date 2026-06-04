@@ -22,6 +22,8 @@
     border-radius: 30px;
     border: 1px solid #3150A0;
     color: #3150A0;
+    font-size: 14px;
+    font-weight: 400;
     padding: 10px 20px;
 }
 .banner-btn .btn:hover{
@@ -29,6 +31,8 @@
     border-radius: 30px;
     border: 1px solid #3150A0;
     color: #fff;
+    font-size: 14px;
+    font-weight: 400;
     padding: 10px 20px;
 }
 .banner-btn .btn-1{
@@ -36,6 +40,8 @@
     border-radius: 30px;
     border: 1px solid #3150A0;
     color: #fff;
+    font-size: 14px;
+    font-weight: 400;
     padding: 10px 20px;
 }
 .banner-btn .btn-1:hover{
@@ -43,10 +49,20 @@
     border-radius: 30px;
     border: 1px solid #3150A0;
     color: #3150A0;
+    font-size: 14px;
+    font-weight: 400;
     padding: 10px 20px;
 }
 
 
+.navbar-collapse{
+    margin-right: 100px;
+}
+
+.navbar-nav a{
+font-size: 16px;
+font-weight: 400;
+}
 /*============ banner style ===========*/
 
 .career-banner {
@@ -129,7 +145,7 @@
 
 .recommended-jobs h5 {
     font-size: 16px;
-    font-weight: 500;
+    font-weight: 600;
     margin-bottom: 10px;
     font-style: medium;
 }
@@ -153,6 +169,12 @@
 
 
 
+
+
+
+
+
+
 /*---------Quick action section style----------*/
 
 .action-card {
@@ -160,6 +182,7 @@
     border-radius: 14px;
     background: #fff;
     transition: .3s;
+    height: 200px;
 }
 
 .action-card img {
@@ -170,7 +193,7 @@
 
 .action-card p {
     font-size: 18px;
-    line-height: 1.3;
+    
     font-weight: 400;
     margin-top: 5px;
 }
@@ -220,44 +243,84 @@
     padding-left: 40px;
 }
 
+/* Accordion Header */
+.accordion-header-custom  {
+    padding: 18px 20px;
+    background: #fff;
+    color: #000;
+    border-radius: 12px;
+    
+    cursor: pointer;
+    /* transition: all 0.3s ease; */
+}
+
+/* Active Header */
+.accordion-item-custom.active .accordion-header-custom  {
+    background: #3150A0;
+    color: #fff;
+    border-radius: 12px 12px 0 0;
+    
+}
+
+/* Header Text & Icon White */
+
+.accordion-item-custom.active .accordion-header-custom i {
+    color: #fff;
+}
+
+/* Optional Icon White */
+.accordion-item-custom.active  .accordion-header-custom .icon {
+    filter: brightness(0) invert(1);
+}
+
+/* Accordion Content */
+.accordion-content-custom {
+    display: none;
+    padding: 20px 40px;
+    background: #3150A0;
+    color: #fff;
+    border-radius: 0 0 12px 12px;
+    margin-top: 0;
+}
+
+/* Show Content */
 .accordion-item-custom.active .accordion-content-custom {
     display: block;
+}
+
+/* Content Text White */
+.accordion-content-custom p,
+.accordion-content-custom li,
+.accordion-content-custom h1,
+.accordion-content-custom h2,
+.accordion-content-custom h3,
+.accordion-content-custom h4,
+.accordion-content-custom h5,
+.accordion-content-custom h6 {
+    color: #fff;
+}
+
+/* Arrow Animation */
+.bi-chevron-down {
+    transition: transform 0.3s ease;
 }
 
 .accordion-item-custom.active .bi-chevron-down {
     transform: rotate(180deg);
 }
 
-.bi-chevron-down {
-    transition: all .3s ease;
+
+/* Active Header */
+.accordion-item-custom.active .accordion-header-custom,
+.accordion-item-custom.active .accordion-header-custom * {
+    color: #fff !important;
+    text-decoration: underline;
 }
 
-
-
-.accordion-header-custom {
-    padding: 18px 20px;
-    background: #fff;
-    color: #000;
-    border-radius: 12px;
-    cursor: pointer;
-    transition: 0.3s ease;
-}
-
-/* Active Accordion */
-.accordion-item-custom.active .accordion-header-custom {
-    background: #3150A0;
-    color: #fff;
-}
-
-/* White text when active */
-.accordion-item-custom.active .accordion-header-custom h6,
-.accordion-item-custom.active .accordion-header-custom i {
-    color: #fff;
-}
-
-/* Optional - make image white */
-.accordion-item-custom.active .accordion-header-custom .icon {
-    filter: brightness(0) invert(1);
+/* Active Content */
+.accordion-item-custom.active .accordion-content-custom,
+.accordion-item-custom.active .accordion-content-custom * {
+    color: #fff !important;
 }
 
 
@@ -438,11 +501,13 @@
     border: 1px solid #e7e7e7;
     border-radius: 18px;
     transition: .3s;
+    height: 150px;
 }
 
 .job-card:hover {
     transform: translateY(-4px);
     box-shadow: 0 10px 25px rgba(0,0,0,0.06);
+     
 }
 
 .company-logo {
@@ -514,6 +579,16 @@
     background:#edf6fd;
     border-radius:24px;
     padding:50px;
+}
+
+.career-box h6{
+    font-size: 36px;
+    font-weight: 700;
+}
+
+.career-box p{
+    font-size: 21px;
+    font-weight: 300;
 }
 
 .download-box{
