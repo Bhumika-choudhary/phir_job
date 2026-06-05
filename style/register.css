@@ -94,14 +94,23 @@
  color: #3150A0;
 }
 
+
+
 .upload-box small{
     font-size: 14px;
     font-weight: 500;
     color: black;
 }
 
+.upload-link{
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
 
-
+.upload-link:hover{
+    color: inherit;
+}
 
 
 .or-divider{

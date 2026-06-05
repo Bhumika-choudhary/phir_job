@@ -1,0 +1,197 @@
+/* =========================
+   Global
+========================= */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Plus Jakarta Sans', sans-serif;
+}
+
+body{
+    background:#F5F3F8;
+    overflow-x:hidden;
+}
+
+/* =========================
+   Back Button
+========================= */
+
+.back-link{
+    display:inline-flex;
+    align-items:center;
+    text-decoration:none;
+    border:1px solid #3150A0;
+    border-radius:30px;
+    padding:10px 20px;
+    color:#3150A0;
+    font-size:14px;
+    font-weight:500;
+    transition:.3s ease;
+}
+
+.back-link:hover{
+    background:#3150A0;
+    color:#fff;
+}
+
+/* =========================
+   Profile Card
+========================= */
+
+.profile-card{
+    background:#fff;
+    border-radius:24px;
+    min-height:600px;
+    overflow:hidden;
+}
+
+.main-title{
+    font-size:32px;
+    font-weight:700;
+    color:#111827;
+    margin-bottom:8px;
+}
+
+.sub-text{
+    font-size:15px;
+    font-weight:400;
+    color:#6B7280;
+}
+
+/* =========================
+   Loader
+========================= */
+
+.loader-wrapper{
+    width:70px;
+    height:70px;
+}
+
+.custom-loader{
+    width:100%;
+    height:100%;
+    border-radius:50%;
+    border:4px dotted #3150A0;
+    border-top-color:transparent;
+    animation:spin 1s linear infinite;
+}
+
+@keyframes spin{
+    100%{
+        transform:rotate(360deg);
+    }
+}
+
+.status-text{
+    color:#3150A0;
+    font-weight:600;
+    font-size:15px;
+}
+
+/* =========================
+   Timeline
+========================= */
+
+.timeline{
+    position:relative;
+    padding:30px;
+}
+
+.timeline::before{
+    content:"";
+    position:absolute;
+    left:48px;
+    top:55px;
+    height:72%;
+    border-left:2px dashed #D7DEEF;
+}
+
+.timeline-item{
+    position:relative;
+    display:flex;
+    align-items:center;
+    gap:18px;
+    margin-bottom:35px;
+    z-index:2;
+}
+
+.timeline-item:last-child{
+    margin-bottom:0;
+}
+
+.timeline-icon{
+    width:38px;
+    height:38px;
+    min-width:38px;
+    border-radius:50%;
+    background:#fff;
+    border:2px dotted #3150A0;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+.timeline-icon i{
+    color:#3150A0;
+    opacity:0;
+    font-size:14px;
+}
+
+.timeline-item.active .timeline-icon i{
+    opacity:1;
+}
+
+.timeline-content{
+    font-size:16px;
+    font-weight:500;
+    color:#3150A0;
+}
+
+.inactive{
+    color:#B7BED1;
+}
+
+/* =========================
+   Right Image
+========================= */
+
+.profile-image{
+    width:100%;
+    height:600px;
+    object-fit:cover;
+    border-radius:24px;
+}
+
+/* =========================
+   Footer
+========================= */
+
+footer{
+    background:#fff;
+    margin-top:20px;
+    padding:15px 0;
+}
+
+.footer-content{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:0 80px;
+}
+
+.footer-content p{
+    margin-bottom:0;
+    font-size:14px;
+    color:#4b5563;
+}
+
+.footer-content .right{
+    display:flex;
+    align-items:center;
+    gap:6px;
+    color:#2CAC63;
+    font-size:14px;
+}
+

@@ -1,0 +1,82 @@
+/* =========================
+   Global
+========================= */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Plus Jakarta Sans', sans-serif;
+}
+
+body{
+    background:#F5F3F8;
+    overflow-x:hidden;
+}
+
+/* =========================
+   Back Button
+========================= */
+
+.back-link{
+    display:inline-flex;
+    align-items:center;
+    text-decoration:none;
+    border:1px solid #3150A0;
+    border-radius:30px;
+    padding:10px 20px;
+    color:#3150A0;
+    font-size:14px;
+    font-weight:500;
+    transition:.3s ease;
+}
+
+.back-link:hover{
+    background:#3150A0;
+    color:#fff;
+}
+
+
+
+/* =========================
+   Right Image
+========================= */
+
+.profile-image{
+    width:100%;
+    height:600px;
+    object-fit:cover;
+    border-radius:24px;
+}
+
+/* =========================
+   Footer
+========================= */
+
+footer{
+    background:#fff;
+    margin-top:20px;
+    padding:15px 0;
+}
+
+.footer-content{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:0 80px;
+}
+
+.footer-content p{
+    margin-bottom:0;
+    font-size:14px;
+    color:#4b5563;
+}
+
+.footer-content .right{
+    display:flex;
+    align-items:center;
+    gap:6px;
+    color:#2CAC63;
+    font-size:14px;
+}
+
