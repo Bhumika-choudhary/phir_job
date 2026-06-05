@@ -20,6 +20,7 @@
 .banner-btn .btn , .banner-btn .btn-1{
    padding: 10px;
    border: none;
+   background-color: white;
 }
 
 .banner-btn .btn a{
