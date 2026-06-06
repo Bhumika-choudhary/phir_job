@@ -40,28 +40,21 @@ body{
 
 
 /* =========================
-   Left Image
+   Left content
 ========================= */
-
-
-
-
-
-
 .step-circle{
     width:90px;
     height:90px;
     border-radius:50%;
-    background: conic-gradient(
-        #3150A0 90deg,
-        #EFEFEF 90deg
-    );
+
+    /* 2 of 4 steps = 50% */
+    background:#3150A0;
+
     display:flex;
     align-items:center;
     justify-content:center;
     position:relative;
 }
-
 
 
 .step-circle::before{
@@ -81,102 +74,120 @@ body{
 
 .step-text{
     display:block;
-    font-size:14px;
+    font-size:12px;
     font-weight:600;
     color:#111;
-    margin-bottom:2px;
+    line-height:1;
 }
 
 .step-content p{
     margin:0;
-    font-size:18px;
+    font-size:22px;
     font-weight:700;
-    color:black;
-    line-height:1;
+    color:#111;
+    line-height:1.2;
 }
 
-
-.custom-input{
-    height:48px;
-    border-radius:10px;
-    font-size:14px;
-}
-
-.gender-btn{
-    border:1px solid #d7d7d7;
-    border-radius:30px;
-    font-size:12px;
-    padding:6px 14px;
-}
-
-.active-btn{
-    border-color:#3150A0;
-    color:#3150A0;
-}
-
-
-
-.continue-btn{
-    background:#3150A0;
-    color:#fff;
-    border-radius:30px;
-    padding:10px 28px;
-    border:none;
-}
-
-.gender-btn{
-    padding:10px 15px;
-    border:1px solid #D0D5DD;
-    border-radius:30px;
-    background:#fff;
-    color:#3150A0;
-    cursor:pointer;
-    font-size:14px;
-    font-weight:500;
-    transition:all .3s ease;
-}
-
-.btn-check:checked + .gender-btn{
-    background:#3150A0;
-    border-color:#3150A0;
-    color:#fff;
-}
-
-.gender-btn:hover{
-    border-color:#3150A0;
-    color:#3150A0;
-}
-
-
-.custom-input{
-    border:1px solid #D0D5DD;
+.skills-box{
+    border:1px solid #e5e7eb;
     border-radius:12px;
-    padding:12px 16px;
-    font-size:14px;
-    height:50px;
+    padding:15px;
+    margin-bottom: 15px;
+}
+
+.custom-input{
+    height: 48px;
+    border: 1px solid #D9DDE8;
+    border-radius: 12px;
+    font-size: 14px;
+    color: #1a1a1a;
+    padding: 12px 16px;
+    box-shadow: none;
+}
+
+.custom-input::placeholder{
+    color: #9CA3AF;
+    font-size: 14px;
 }
 
 .custom-input:focus{
+    border-color: #3150A0;
+    box-shadow: 0 0 0 0.15rem rgba(49, 80, 160, 0.15);
+}
+
+.skill-tag{
+    display:flex;
+    align-items:center;
+    gap:8px;
+    padding:6px 12px;
+    border:1px solid #3150A0;
+    border-radius:20px;
+    color:#3150A0;
+    font-size:14px;
+}
+
+.skill-tag i{
+    cursor:pointer;
+    font-size:12px;
+}
+
+
+.custom-check .form-check-input{
+    width:18px;
+    height:18px;
+    /* margin-top:2px; */
+    border:1.5px solid #D0D5DD;
+    border-radius:4px;
+    cursor:pointer;
+}
+
+.custom-check .form-check-input:checked{
+    background-color:#3150A0;
     border-color:#3150A0;
+}
+
+.custom-check .form-check-input:focus{
     box-shadow:none;
+    border-color:#3150A0;
+}
+
+.custom-check .form-check-label{
+    font-size:13px;
+    font-weight:400;
+    color:#111827;
+    cursor:pointer;
+    margin-left:4px;
 }
 
 
 
-.add-more-link{
-    display: inline-block;
-    margin-top: 10px;
-    color: #3150A0;
-    font-size: 14px;
-    font-weight: 500;
-    text-decoration: underline;
-    padding:10px 10px;
+
+.custom-check .form-check-input{
+    width:16px;
+    height:16px;
+    border:1px solid #3150A0;
+    cursor:pointer;
 }
 
-.add-more-link:hover{
-    color: #1f3d8a;
-    
+.custom-check .form-check-input:checked{
+    background-color:#3150A0;
+    border-color:#3150A0;
 }
+
+.custom-check .form-check-input:focus{
+    box-shadow:none;
+    border-color:#3150A0;
+}
+
+.custom-check .form-check-label{
+    color:#111827;
+    font-size:13px;
+    font-weight:400;
+    cursor:pointer;
+}
+
+
+
 
 .continue-btn{
     margin-top: 20px;
@@ -205,12 +216,15 @@ body{
 
 .profile-image{
     width:100%;
-    height:700px;
+    height:600px;
     object-fit:cover;
     border-radius:24px;
     
 
 }
+
+
+
 
 /* =========================
    Footer

@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Preferences</title>
+
+    <!----------- link ----------->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+
+    <link rel="stylesheet" href="./style/preference.css">
+
+
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+
+    <!--------for animation------>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="bg-white py-3 border-bottom">
+        <div class="container">
+            <div class="row align-items-center">
+
+                <div class="col-6">
+                    <img src="./img/Group 134.png" alt="Logo" class="img-fluid">
+                </div>
+
+                <div class="col-6 back-btn d-flex justify-content-end align-items-center">
+
+                    <a href="skills.html" class="back-link">
+                        <i class="fa-solid fa-arrow-left me-2"></i>
+                        Back
+                    </a>
+
+                </div>
+
+            </div>
+        </div>
+    </header>
+
+    <!-- information  Section -->
+
+
+    <section class="py-5" style="background:#f6f4f9;">
+        <div class="container">
+
+            <div class="row justify-content-center align-items-start g-4">
+
+                <!-- Left Form Card -->
+                <div class="col-12 col-lg-7" data-aos="fade-right">
+
+                    <div class="bg-white  rounded-4 overflow-hidden">
+
+                        <!-- Header -->
+                        <div class="d-flex justify-content-between align-items-center border-bottom p-4 ">
+
+                            <h3 class="fw-bold mb-0">
+                                Job Preferences
+                            </h3>
+
+                            <!-- STEP IMAGE -->
+                            <div class="step-wrapper d-flex justify-content-center align-items-center">
+
+                                <div class="step-circle">
+                                    <div class="step-content">
+                                        <span class="step-text">STEP</span>
+                                        <p>3/4</p>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <!-- Body -->
+                        <div class="p-4">
+
+                            <!-- Form -->
+
+
+                            <div class="row g-3">
+
+                                <div class="col-md-6">
+                                    <label class="form-label small">
+                                        Preferred Job Role(s) *
+                                    </label>
+
+                                    <select class="form-select form-custom">
+                                        <option selected disabled>Select Job Role</option>
+                                        <option>Frontend Developer</option>
+                                        <option>Backend Developer</option>
+                                        <option>Full Stack Developer</option>
+                                        <option>React Developer</option>
+                                        <option>UI/UX Designer</option>
+                                        <option>Software Engineer</option>
+                                        <option>QA Engineer</option>
+                                        <option>Data Analyst</option>
+                                        <option>DevOps Engineer</option>
+                                    </select>
+                                </div>
+
+                                <div class="col-md-6">
+                                    <label class="form-label small">
+                                        Preferred Location(s) *
+                                    </label>
+
+                                    <select class="form-select form-custom">
+                                        <option selected disabled>Select Location</option>
+                                        <option>Ahmedabad</option>
+                                        <option>Mumbai</option>
+                                        <option>Pune</option>
+                                        <option>Bangalore</option>
+                                        <option>Hyderabad</option>
+                                        <option>Chennai</option>
+                                        <option>Delhi NCR</option>
+                                        <option>Kolkata</option>
+                                        <option>Remote</option>
+                                    </select>
+                                </div>
+
+                                <div class="col-md-6">
+                                    <label class="form-label small">
+                                        Expected CTC / Salary
+                                    </label>
+
+                                    <input type="number" class="form-control form-custom" placeholder="e.g. 700000">
+                                </div>
+
+                                <div class="col-md-6">
+                                    <label class="form-label small">
+                                        Job Type
+                                    </label>
+
+                                    <select class="form-select form-custom">
+                                        <option selected disabled>Select Job Type</option>
+                                        <option>Full Time</option>
+                                        <option>Part Time</option>
+                                        <option>Internship</option>
+                                        <option>Contract</option>
+                                        <option>Freelance</option>
+                                        <option>Remote</option>
+                                        <option>Hybrid</option>
+                                    </select>
+                                </div>
+
+                                <div class="col-md-6">
+                                    <label class="form-label small">
+                                        Availability / Notice Period *
+                                    </label>
+
+                                    <select class="form-select form-custom">
+                                        <option selected disabled>Select Notice Period</option>
+                                        <option>Immediate Joiner</option>
+                                        <option>15 Days</option>
+                                        <option>30 Days</option>
+                                        <option>45 Days</option>
+                                        <option>60 Days</option>
+                                        <option>90 Days</option>
+                                    </select>
+                                </div>
+
+                                <div class="col-md-6">
+                                    <label class="form-label small">
+                                        Industry / Domain (Optional)
+                                    </label>
+
+                                    <select class="form-select form-custom">
+                                        <option selected disabled>Select Industry</option>
+                                        <option>Information Technology</option>
+                                        <option>Software Development</option>
+                                        <option>FinTech</option>
+                                        <option>Healthcare</option>
+                                        <option>E-Commerce</option>
+                                        <option>Education</option>
+                                        <option>Telecommunications</option>
+                                        <option>Manufacturing</option>
+                                        <option>Banking</option>
+                                        <option>Marketing & Advertising</option>
+                                    </select>
+                                </div>
+                                <div class="col-12 d-flex gap-3">
+
+                                    <label class="form-label custom-label d-block mb-3 text-muted">
+                                        Open to Relocation (Optional)
+                                    </label>
+
+
+
+                                    <div class="form-check custom-radio">
+                                        <input class="form-check-input" type="radio" name="relocation"
+                                            id="relocationYes">
+
+                                        <label class="form-check-label" for="relocationYes">
+                                            Yes
+                                        </label>
+                                    </div>
+
+                                    <div class="form-check custom-radio">
+                                        <input class="form-check-input" type="radio" name="relocation" id="relocationNo"
+                                            checked>
+
+                                        <label class="form-check-label" for="relocationNo">
+                                            No
+                                        </label>
+                                    </div>
+
+
+
+                                </div>
+
+                                <!-- Bottom Actions -->
+
+                                <div class="col-12 text-end">
+
+                                    <a href="profile.html" class="continue-btn text-decoration-none">
+                                        Continue
+                                    </a>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- Right Image -->
+                <div class="col-12 col-lg-5" data-aos="fade-left">
+
+                    <img src="./img/login img.png" alt="Profile Image" class="img-fluid w-100 profile-image rounded-4">
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+
+
+    <!-- Footer -->
+    <footer class="bg-white py-3 mt-4">
+
+        <div class="container">
+
+            <div class="row d-flex align-items-center">
+
+                <div class="col-12 col-lg-8 text-center text-lg-start">
+
+                    <p class="mb-0">
+                        © 2026 PHIR Jobs. All rights reserved. |
+                        Built for the next generation of talent.
+                    </p>
+
+                </div>
+
+                <div class="col-12 col-lg-4 mt-2 mt-lg-0">
+
+                    <div class="d-flex justify-content-center justify-content-lg-end align-items-center gap-2">
+
+                        <img src="./img/shield_lock.svg" alt="" width="20" height="20">
+
+                        <span class="text-success">
+                            Your Data is Safe & Secure
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+    <!-- script for animation -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
+    <script>
+        AOS.init({
+            duration: 1000,
+            once: true
+        });
+    </script>
+
+
+
+
+
+</body>
+
+</html>
