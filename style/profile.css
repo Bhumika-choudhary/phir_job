@@ -49,86 +49,6 @@ body{
     width:60px;
 }
 
-/* .profile-img-box{
-    width: 70px;
-    height: 70px;
-}
-
-.info-card{
-    background:#fff;
-    border:1px solid #ececec;
-    border-radius:20px;
-    padding:20px;
-    height:100%;
-}
-
-.info-card h6{
-    font-size: 14px;
-    font-weight: 500;
-} */
-
-/* .icon-box{
-    width:58px;
-    height:58px;
-    border-radius:14px;
-    background:#f8f8f8;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    flex-shrink:0;
-} */
-
-/* .icon-img{
-    width:28px;
-    object-fit:contain;
-} */
-
-/* .edit-btn{
-    width:30px;
-    height:30px;
-    border-radius:50%;
-    border:1px solid #3150A0;
-    background:#fff;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    padding:0;
-    transition:.3s;
-} */
-
-/* .edit-icon{
-    width:12px;
-    height:12px;
-    object-fit:contain;
-}
-
-.edit-btn:hover{
-    background:#3150A0;
-} */
-
-
-/* .small-btn{
-    width:28px;
-    height:28px;
-    font-size:12px;
-} */
-
-/* .card-icon{
-    width:70px;
-    height:70px;
-    border-radius:18px;
-   
-    display:flex;
-    align-items:center;
-    justify-content:center;
-} */
-
-
-/* .info-card {
-    background: #fff;
-    border: 1px solid #ececec;
-    border-radius: 16px;
-} */
 
 .profile-img-box {
     width: 70px;
@@ -143,7 +63,7 @@ body{
 
 .info-card h6 {
     font-size: 13px;
-    /* line-height: 1.4; */
+   
 }
 
 .info-card p,
