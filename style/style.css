@@ -103,6 +103,7 @@ font-weight: 400;
 /* Search Box */
 .search-box {
     background: #fff;
+    border: 1px solid ;
     border-radius: 50px;
     padding: 8px;
     display: flex;

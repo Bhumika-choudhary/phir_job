@@ -1,0 +1,1021 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Jobs Description </title>
+
+
+    <!----------- link ----------->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style/description.css">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+
+    <!--------for animation------>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+
+    <!-------- Recruiter Visibility start --------->
+
+
+    <section class="py-3 dashboard-section" id="profileAlert">
+
+        <div class="container-fluid">
+
+            <div class="profile-alert">
+
+                <div class="row align-items-center gy-3">
+
+                    <!-- Profile -->
+                    <div class="col-lg-3 col-md-4">
+
+                        <div class="d-flex align-items-center gap-4">
+
+                            <div class="position-relative">
+
+                                <img src="./img/Ellipse 4.png" alt="Profile" width="60" height="60"
+                                    class="rounded-circle object-fit-cover">
+
+                                <span class="profile-score">
+                                    75%
+                                </span>
+
+                            </div>
+
+                            <div>
+
+                                <h6 class="mb-0 fw-semibold">
+                                    Aditi Sharma
+                                </h6>
+
+                                <small>
+                                    Your Profile is Incomplete
+                                </small>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <!-- Content -->
+                    <div class="col-lg-6 col-md-4">
+
+                        <h6 class="fw-semibold mb-1">
+                            No Recruiter Action Yet
+                        </h6>
+
+                        <small>
+                            Refreshing skills, preferences, and applying to relevant roles improves recruiter visibility
+                        </small>
+
+                    </div>
+
+                    <!-- Button -->
+                    <div class="col-lg-2 col-md-3 text-md-end">
+
+                        <a href="profile.html" class="btn update-btn rounded-pill px-4">
+                            Update Profile
+                        </a>
+
+                    </div>
+
+                    <!-- Close -->
+                    <div class="col-lg-1 col-md-1 text-end">
+
+                        <button class="close-btn border-0 bg-transparent" onclick="closeAlert()">
+                            ✕
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-------- Recruiter Visibility end --------->
+
+
+
+    <!---------- Quick action ------------->
+
+    <section class="quick-actions-section" data-aos="fade-up">
+
+        <div class="container">
+
+            <div class="row align-items-center">
+
+                <div class="d-flex gap-4">
+                    <!-- Heading -->
+                    <div class="col-auto ">
+                        <h6 class="mb-0 fw-semibold quick-heading">
+                            Quick Actions
+                        </h6>
+                    </div>
+
+                    <!-- Divider -->
+                    <div class="col-auto">
+                        <div class="vr"></div>
+                    </div>
+
+                    <!-- Carousel -->
+
+
+                    <div id="carouselExample" class="carousel slide">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="d-flex flex-wrap align-items-center justify-content-between gap-2">
+
+                                    <a href="#" class="action-link">
+                                        <img src="./img/business_center.svg" alt="">
+                                        AI Resume Builder
+                                    </a>
+
+                                    <a href="#" class="action-link">
+                                        <img src="./img/domain.svg" alt="">
+                                        Assess Yourself
+                                    </a>
+
+                                    <a href="#" class="action-link">
+                                        <img src="./img/frame_person_mic.svg" alt="">
+                                        Mock Interview
+                                    </a>
+
+                                    <a href="#" class="action-link">
+                                        <img src="./img/school.svg" alt="">
+                                        Upskill Yourself
+                                    </a>
+
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="d-flex flex-wrap align-items-center justify-content-between gap-3">
+
+                                    <a href="#" class="action-link">
+                                        <img src="./img/adaptive_audio_mic.svg" alt="">
+                                        Counselling
+                                    </a>
+
+                                    <a href="#" class="action-link">
+                                        <img src="./img/adaptive_audio_mic.svg" alt="">
+                                        Work
+                                    </a>
+
+                                    <a href="#" class="action-link">
+                                        <img src="./img/adaptive_audio_mic.svg" alt="">
+                                        Jobs
+                                    </a>
+
+                                    <a href="#" class="action-link">
+                                        <img src="./img/adaptive_audio_mic.svg" alt="">
+                                        Companies
+                                    </a>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!---------- Quick action end ------------->
+
+
+    <!------------- company description ------------->
+
+
+    <section class="py-4 bg-light">
+
+        <div class="container">
+
+            <!-- BACK -->
+            <a href="#" class="text-dark text-decoration-none small d-inline-flex align-items-center gap-2 mb-3">
+
+                <i class="bi bi-arrow-left"></i>
+                Back
+
+            </a>
+
+            <!-- MAIN CARD -->
+            <div class="main-card">
+
+                <div class="row g-4">
+
+                    <!-- LEFT -->
+                    <div class="col-lg-6 " data-aos="fade-right">
+
+                        <!-- TOP -->
+                        <div class="d-flex gap-3 ">
+
+                            <div class="col-lg-10 d-flex gap-3">
+
+                               <div class="col-lg-2">
+                                 <img src="./img/Rectangle 74 (8).png" alt="" class="company-logo ">
+
+                               </div>
+
+                                <div class="col-lg-10">
+
+                                    <h5 class="fw-bold mb-1">
+                                        UI / UX Designer - B2B Data
+                                        & Workflow systems
+                                    </h5>
+
+                                    <p class="small  mb-0">
+                                        Client of AirAI
+                                    </p>
+
+                                </div>
+                            </div>
+
+                            <!-- LOCATION -->
+                            <div class=" col-lg-2 d-flex align-items-center gap-2 small mb-3">
+
+                                <i class="bi bi-geo-alt"></i>
+
+                                Mumbai
+
+                            </div>
+
+
+                        </div>
+
+                        <!-- JOB INFO -->
+                        <div class="row g-3 mt-3">
+
+                            <div class="col-6 col-md-4">
+                                <div class="d-flex gap-3">
+                                    <img src="./img/Ellipse 7.png" alt="" width="38" height="38" class="mt-2">
+
+                                    <div class="company-name ">
+                                        <small class=" d-block">
+                                            Posted by
+                                        </small>
+
+                                        <p class="small fw-semibold mb-0">
+                                            PROCURE Infotech
+                                        </p>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="col-6 col-md-4 ">
+
+                                <div class="d-flex gap-3">
+                                    <img src="./img/business_center (1).svg" alt="" width="24" height="24" class="mt-2">
+
+                                    <div>
+                                        <small class=" d-block">
+                                            Exp.
+                                        </small>
+
+                                        <p class="small fw-semibold mb-0">
+                                            3 - 8 Years
+                                        </p>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="col-6 col-md-4 d-flex ">
+
+                                <div class="d-flex gap-3">
+                                    <img src="./img/currency_rupee.svg" alt="" width="24" height="24" class="mt-2">
+
+                                    <div>
+                                        <small class="d-block">
+                                            CTC / Salary
+                                        </small>
+
+                                        <p class="small fw-semibold mb-0">
+                                            18-25 Lacs PA
+                                        </p>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <!-- DETAILS -->
+                        <div class="d-flex flex-wrap gap-4 mt-4 small">
+
+                            <span>
+                                Posted: 4 days ago
+                            </span>
+
+                            <span>
+                                Openings: 1
+                            </span>
+
+                            <span>
+                                Applicants: 10+
+                            </span>
+
+                        </div>
+
+                        <!-- BUTTONS -->
+                        <div class="d-flex gap-3 flex-wrap mt-4">
+
+                            <button class="apply-btn">
+                                Apply
+                            </button>
+
+                            <button class="save-btn">
+
+                                <img src="./img/bookmark (1).svg" alt="" class="btn-icon">
+
+                                Save
+
+                            </button>
+
+                            <div class="send-job ">
+                                <a href="#" class="small ">
+
+                                    Send me jobs like this
+
+                                </a>
+                            </div>
+
+                        </div>
+
+                        <!-- DESCRIPTION -->
+                        <div class="content-box mt-4">
+
+                            <h6 class="fw-bold mb-3">
+                                Job description
+                            </h6>
+
+                            <p class="small">
+                                As designer the role will shape the entire product experience from the ground up- design
+                                language, system & standard. End to end UX from discovery& research to high fidelity
+                                prototypes. Advanced filtering, search & workflow navigation,
+                            </p>
+                            <h6 class="fw-bold mb-3">
+                                Required Candidate Profile
+                            </h6>
+
+                            <p class="small">
+                                3+ years of UI/UX design exp. with a portfolio that demonstrates real depth in
+                                dashboards, workflow systems or enterprise products.Intelligence dashboards, data-heavy
+                                analytics interfaces
+                            </p>
+
+                            <div class="small">
+
+                                <p class="mb-1">
+                                    <strong>Role:</strong> UI/UX Designer
+                                </p>
+
+                                <p class="mb-1">
+                                    <strong>Industry Type:</strong> IT Services
+                                </p>
+
+                                <p class="mb-1">
+                                    <strong>Department:</strong> Design
+                                </p>
+
+                                <p class="mb-1">
+                                    <strong>Employment Type:</strong> Full Time
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <!-- RIGHT -->
+                    <div class="col-lg-6" data-aos="fade-left" style="padding-left: 20px;">
+
+
+                        <!-- AI REVIEW -->
+                        <div class="review-box d-flex align-items-center gap-3">
+
+                            <img src="./img/Group 1000011514.svg" alt="" class="review-icon">
+
+                            <p class=" review-p mb-0">
+                                AI Review: Is this job the right match for me?
+                            </p>
+
+                        </div>
+
+                        <!-- HIGHLIGHTS -->
+                        <div class="content-box mt-4">
+
+                            <h6 class="fw-bold mb-3">
+                                Job highlights
+                            </h6>
+
+                            <ul class="mb-0 ps-3">
+                                <li class="mb-2">
+                                    3+ years UI/UX design experience with expertise in dashboards and workflow systems
+                                </li>
+
+                                <li>
+                                    Design product experience end-to-end including design language, UX research,
+                                    high-fidelity prototypes, and workflow navigation
+                                </li>
+                            </ul>
+
+
+                          
+                        </div>
+
+                        <!-- SCORE -->
+                        <div class="mt-4">
+
+                            <h6 class="fw-bold mb-3 ps-3">
+                                Job Match Score
+                            </h6>
+                            <div class="d-flex flex-wrap gap-3 small ps-3">
+
+                                <span class="match-item">
+                                    <img src="./img/cancel.svg" alt="">
+                                    Early Applicant
+                                </span>
+
+                                <span class="match-item">
+                                    <img src="./img/check_circle.svg" alt="">
+                                    Skills Match
+                                </span>
+
+                                <span class="match-item">
+                                    <img src="./img/check_circle.svg" alt="">
+                                    Location
+                                </span>
+
+                                <span class="match-item">
+                                    <img src="./img/check_circle.svg" alt="">
+                                    Work Experience
+                                </span>
+
+                            </div>
+
+                        </div>
+
+                        <!-- EDUCATION -->
+                        <div class="content-box mt-4">
+
+                            <h6 class="fw-bold mb-3">
+                                Education
+                            </h6>
+
+                            <p class="small mb-0">
+                                UG: B.Tech / B.E. in Computer Science and Engineering (CSE), Computer Science and
+                                Business System, Data Science, Information Science, Information Technology, Artificial
+                                Intelligence, Artificial Intelligence And Data Science, Electronics And Computer
+                                Engineering, B.Sc in Data Science, Information System Management, Artificial
+                                Intelligence and Data Science, Artificial Intelligence and Machine Learning, Computer
+                                Science and Technology, Information Science, Information Technology (IT), Artificial
+                                Intelligence, IT & Data Analytics
+                            </p>
+
+                        </div>
+
+                        <!-- SKILLS -->
+                        <div class="content-box mt-4">
+
+                            <h6 class="fw-bold mb-3">
+                                Key skills
+                            </h6>
+
+                            <div class="d-flex flex-wrap gap-2">
+
+                                <span class="skill-tag">
+                                    <img src="./img/star.svg" alt="" width="16" height="16">
+                                    UI/UX
+                                </span>
+
+                                <span class="skill-tag">
+                                    <img src="./img/star.svg" alt="" width="16" height="16">
+                                    Figma
+                                </span>
+
+                                <span class="skill-tag">
+                                    <img src="./img/star.svg" alt="" width="16" height="16">
+                                    User Experience
+                                </span>
+
+                                <span class="skill-tag">
+                                    <img src="./img/star.svg" alt="" width="16" height="16">
+                                    Prototype
+                                </span>
+
+                                <span class="skill-tag">
+                                    <img src="./img/star.svg" alt="" width="16" height="16">
+                                    Workflow
+                                </span>
+                            </div>
+
+                            <div class="d-flex flex-wrap gap-2">
+                                <span class="skill-tag">
+                                    B2B Data
+                                </span>
+
+                                <span class="skill-tag">
+                                    User Experience Design
+                                </span>
+
+                                <span class="skill-tag">
+                                    Prototype
+                                </span>
+
+                                <span class="skill-tag">
+                                    User Interface Designing
+                                </span>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="col" data-aos="fade-right">
+                        <h6 class="fw-bold">About company</h6>
+                        <p>Data & AI-driven intelligence & transaction platform for B2B commerce . We are at ground
+                            zero.</p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!------------- company description end ------------->
+
+
+
+
+
+
+    <!--------- be aware section start-------->
+
+    <section class="py-3">
+        <div class="container">
+
+            <div class="alert-box p-3 p-md-4">
+
+                <div class="row align-items-start" data-aos="fade-up">
+
+
+
+                    <div class="col">
+
+                        <h6 class="fw-bold mb-3">
+                            Beware of imposters!
+                        </h6>
+
+                        <p class="mb-1 small ">
+                            phirjobs.com does not promise a job or an interview in exchange of money. Fraudsters may ask
+                            you to pay in the pretext of registration fee, Refundable Fee…
+
+                        </p>
+
+                        <a href="#" class="read-more-link">
+                            Read more
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!--------- be aware section end--------->
+
+
+    <!---------- featured in section start --------->
+
+
+    <section>
+
+        <div class="container">
+
+            <!-- Heading -->
+            <div class="d-flex justify-content-between">
+                <div class="mb-5" data-aos="fade-right">
+                    <h4 class="fw-bold">Similar Jobs for you</h4>
+                </div>
+
+                <div data-aos="fade-left">
+                    <a href=""> View All</a>
+                </div>
+
+            </div>
+
+            <div class="row g-4">
+
+                <!-- CARD 1 -->
+                <div class="col-lg-6 col-md-6 col-12" data-aos="fade-right">
+                    <div class="job-card p-3 ">
+
+                        <div class="d-flex justify-content-between">
+
+                            <div class="d-flex">
+                                <img src="./img/Rectangle 74 (8).png" alt="" class="company-logo me-3">
+
+                                <div>
+                                    <small class=" d-block">Airtel</small>
+                                    <h6 class="fw-bold mb-0">
+                                        Senior Product Designer
+                                    </h6>
+                                </div>
+                            </div>
+
+                            <div class="text-end text-muted">
+
+                                <small>1 day</small>
+                            </div>
+
+                        </div>
+
+                        <div class="d-flex justify-content-between align-items-center mt-4">
+
+                            <div class="d-flex gap-2 flex-wrap">
+
+                                <span class="tag">
+                                    <img src="./img/location_on.svg" alt="">
+                                    Mumbai, Maharashtra
+                                </span>
+
+
+                            </div>
+
+
+
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- CARD 2 -->
+                <div class="col-lg-6 col-md-6 col-12" data-aos="fade-left">
+                    <div class="job-card p-3 ">
+
+                        <div class="d-flex justify-content-between">
+
+                            <div class="d-flex">
+                                <img src="./img/Rectangle 74 (9).png" alt="" class="company-logo me-3">
+
+                                <div>
+                                    <small class=" d-block">Razorpay</small>
+                                    <h6 class="fw-bold mb-0">
+                                        Frontend Developer (React)
+                                    </h6>
+                                </div>
+                            </div>
+
+                            <div class="text-end text-muted">
+
+                                <small>1 day</small>
+                            </div>
+
+                        </div>
+
+                        <div class="d-flex justify-content-between align-items-center mt-4">
+
+                            <div class="d-flex gap-2 flex-wrap">
+
+                                <span class="tag">
+                                    <img src="./img/location_on.svg" alt="">
+                                    Mumbai, Maharashtra
+                                </span>
+
+                            </div>
+
+
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- CARD 3 -->
+                <div class="col-lg-6 col-md-6 col-12" data-aos="fade-right">
+                    <div class="job-card p-3 ">
+
+                        <div class="d-flex justify-content-between">
+
+                            <div class="d-flex">
+                                <img src="./img/Rectangle 74 (11).png" alt="" class="company-logo me-3">
+
+                                <div>
+                                    <small class=" d-block">Swiggy</small>
+                                    <h6 class="fw-bold mb-0">
+                                        Marketing Manager
+                                    </h6>
+                                </div>
+                            </div>
+
+                            <div class="text-end text-muted">
+
+                                <small>1 day</small>
+                            </div>
+
+                        </div>
+
+                        <div class="d-flex justify-content-between align-items-center mt-4">
+
+                            <div class="d-flex gap-2 flex-wrap">
+
+                                <span class="tag">
+                                    <img src="./img/location_on.svg" alt="">
+                                    Mumbai, Maharashtra
+                                </span>
+
+                            </div>
+
+
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- CARD 4 -->
+                <div class="col-lg-6 col-md-6 col-12" data-aos="fade-left">
+                    <div class="job-card p-3 ">
+
+                        <div class="d-flex justify-content-between">
+
+                            <div class="d-flex">
+                                <img src="./img/Rectangle 74 (10).png" alt="" class="company-logo me-3">
+
+                                <div>
+                                    <small class="d-block">IndusInd</small>
+                                    <h6 class="fw-bold mb-0">
+                                        Financial Analyst
+                                    </h6>
+                                </div>
+                            </div>
+
+                            <div class="text-end text-muted">
+
+                                <small>1 day</small>
+                            </div>
+
+                        </div>
+
+                        <div class="d-flex justify-content-between align-items-center mt-4">
+
+                            <div class="d-flex gap-2 flex-wrap">
+
+                                <span class="tag">
+                                    <img src="./img/location_on.svg" alt="">
+                                    Mumbai, Maharashtra
+                                </span>
+
+                            </div>
+
+
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- CARD 5 -->
+                <div class="col-lg-6 col-md-6 col-12" data-aos="fade-right">
+                    <div class="job-card p-3 ">
+
+                        <div class="d-flex justify-content-between">
+
+                            <div class="d-flex">
+                                <img src="./img/Rectangle 74 (13).png" alt="" class="company-logo me-3">
+
+                                <div>
+                                    <small class=" d-block">Meta</small>
+                                    <h6 class="fw-bold mb-0">
+                                        Technical Recruiter
+                                    </h6>
+                                </div>
+                            </div>
+
+                            <div class="text-end text-muted">
+
+                                <small>1 day</small>
+                            </div>
+
+                        </div>
+
+                        <div class="d-flex justify-content-between align-items-center mt-4">
+
+                            <div class="d-flex gap-2 flex-wrap">
+
+                                <span class="tag">
+                                    <img src="./img/location_on.svg" alt="">
+                                    Mumbai, Maharashtra
+                                </span>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- CARD 6 -->
+                <div class="col-lg-6 col-md-6 col-12" data-aos="fade-left">
+                    <div class="job-card p-3 ">
+
+                        <div class="d-flex justify-content-between">
+
+                            <div class="d-flex">
+                                <img src="./img/Rectangle 74 (12).png" alt="" class="company-logo me-3">
+
+                                <div>
+                                    <small class=" d-block">Tesla</small>
+                                    <h6 class="fw-bold mb-0">
+                                        Data Engineer
+                                    </h6>
+                                </div>
+                            </div>
+
+                            <div class="text-end text-muted">
+
+                                <small>1 day</small>
+                            </div>
+
+                        </div>
+
+                        <div class="d-flex justify-content-between align-items-center mt-4">
+
+                            <div class="d-flex gap-2 flex-wrap">
+
+                                <span class="tag">
+                                    <img src="./img/location_on.svg" alt="">
+                                    Mumbai, Maharashtra
+                                </span>
+
+                            </div>
+
+
+
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Button -->
+            <!-- <div class="more-btn-wrapper">
+                <a href="#" class="more-btn">
+                    More Jobs
+                </a>
+            </div> -->
+
+        </div>
+
+    </section>
+
+
+
+    <!---------- featured in section end  --------->
+
+
+
+    <!------- Ai career section start------>
+
+
+    <section class="py-5">
+
+        <div class="container" data-aos="fade-up">
+
+            <div class="career-box">
+
+                <div class="row align-items-center g-4">
+
+                    <!-- LEFT CONTENT -->
+                    <div class="col-lg-6 col-12 width-450">
+
+                        <h2 class="fw-bold mb-3">
+                            Your AI Career <br>
+                            Coach in Your Pocket.
+                        </h2>
+
+                        <p class="text-dark mb-4 ">
+                            Master your next interview and track applications
+                            instantly with the <span class="fw-bold">PHIR Jobs</span> mobile app.
+                        </p>
+
+                        <!-- INPUT -->
+                        <div class="download-box d-flex align-items-center">
+
+                            <div class="input-box d-flex align-items-center">
+
+                                <img src="./img/call.svg" alt="" class="me-2">
+
+                                <input type="text" placeholder="Enter your number..."
+                                    class="border-0 bg-transparent w-100 outline-none">
+
+                            </div>
+
+                            <button class="link-btn">
+                                Get Link
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                    <!-- RIGHT CONTENT -->
+                    <div class="col-lg-6 col-12">
+
+                        <div class="qr-card mx-lg-auto">
+
+                            <h6 class="mb-3">
+                                Scan QR to Download <br>
+                                PHIR Jobs App
+                            </h6>
+
+                            <div class="d-flex align-items-center gap-3">
+
+                                <!-- QR -->
+                                <img src="./img/image 33.png" alt="" class="qr-img">
+
+                                <!-- STORE -->
+                                <div class="store-btns">
+
+                                    <img src="./img/image 31.png" alt="" class="store-img mb-2">
+
+                                    <img src="./img/image 32.png" alt="" class="store-img">
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+
+    <!------- Ai career section end------>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
+    <script>
+        AOS.init({
+            duration: 1000,
+            once: true
+        });
+    </script>
+
+    <script src="./script/description.js"></script>
+
+</body>
+
+</html>

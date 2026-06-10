@@ -1,0 +1,38 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Helvetica Neue', sans-serif;
+    overflow-x: hidden;
+
+}
+
+
+.logo-img{
+    max-height: 45px;
+}
+
+.nav-link{
+    color:black;
+    font-size:14px;
+    font-weight:500;
+}
+
+.nav-link:hover,
+.nav-link.active{
+    color:#3150A0;
+}
+
+.menu-circle{
+    width:32px;
+    height:32px;
+    border:1px solid #e5e5e5;
+    border-radius:50%;
+    color:#666;
+    text-decoration:none;
+}
+
+/* .navbar-custom{
+    border-bottom:2px solid #3150A0 !important;
+} */
