@@ -146,74 +146,143 @@ body{
 
 /*============ choose template ===========*/
 
-
 .back-link{
-    display: inline-flex;
-    align-items: center;
-    gap: 10px;
-    font-size: 16px;
-    font-weight: 500;
-    color: #111827;
-    text-decoration: none;
-    transition: 0.3s ease;
+    text-decoration:none;
+    color:#111;
+    display:flex;
+    align-items:center;
+    gap:10px;
+    font-size:16px;
+    font-weight:500;
 }
 
-
-
-.back-link i{
-    font-size: 14px;
+.next-btn{
+    background:#3150A0;
+    border:none;
+    color:#fff;
+    padding:10px 20px;
 }
-
-
-
-
-
-
-
-.generate-btn{
+.save-btn {
     border: 1px solid #3150A0;
-    background-color: #3150A0;
-    color: #fff;
-    padding: 10px 20px;
-    transition: all 0.3s ease;
-}
-
-.generate-btn:hover{
-    border: 1px solid #3150A0;
-    background-color: #fff;
     color: #3150A0;
+    background-color: #fff;
+    
 }
-
-.generate-btn:hover img{
-    filter: brightness(0) saturate(100%) invert(29%) sepia(38%)
-            saturate(1812%) hue-rotate(208deg)
-            brightness(91%) contrast(89%); /* Blue icon */
-}
-
-
-.resume-wrapper{
-    border: 1px solid #E5E7EB;
-    border-radius: 16px;
-    background: #fff;
-}
-
-.table-header{
-    background: #F5F2F7;
-    border-radius: 8px;
-    font-size: 14px;
-    font-weight: 600;
-}
-
-.resume-wrapper h6{
-    font-size: 14px;
+.save-btn:hover {
+    border: 1px solid #3150A0;
+    color: #fff;
+    background-color: #3150A0;
     
 }
 
-.resume-wrapper small{
+.save-btn:hover img{
+    filter: brightness(0) invert(1);
+}
+
+
+
+
+
+.upload-box{
+    background:#F5F2F7;
+    border-radius:16px;
+}
+
+.upload-box img{
+    margin-bottom: 25px;
+}
+
+.upload-btn{
+    border:1px dashed #3150A0;
+    background-color: #fff;
+    border-radius:10px;
+    padding:12px;
+    text-align:center;
+    color:#3150A0;
+    cursor:pointer;
+}
+
+/* Resume Cards */
+.resume-card{
+    background: #fff;
+    border: 1px solid #E5E7EB;
+    border-radius: 16px;
+    margin-bottom: 16px;
+    overflow: hidden;
+}
+
+/* Accordion Header */
+.accordion-btn{
+    width: 100%;
+    border: none;
+    background: #fff;
+    padding: 20px 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    text-align: left;
+}
+
+.accordion-btn span{
+    font-size: 16px;
+    font-weight: 600;
+    color: #111827;
+}
+
+/* Arrow */
+.accordion-icon{
+    transition: transform 0.3s ease;
+}
+
+/* Open State */
+.accordion-btn.active .accordion-icon{
+    transform: rotate(90deg);
+}
+
+/* Accordion Content */
+.accordion-content{
+    display: none;
+    padding: 24px;
+    border-top: 1px solid #E5E7EB;
+}
+
+.accordion-content.show{
+    display: block;
+}
+
+/* Form Labels */
+.form-label{
     font-size: 14px;
+    font-weight: 500;
+    color: #374151;
+    margin-bottom: 8px;
 }
 
-.border-bottom{
-    border-color: #E5E7EB !important;
+/* Inputs & Select */
+.form-control,
+.form-select{
+    height: 50px;
+    border: 1px solid #D9DDE8;
+    border-radius: 12px;
+    font-size: 14px;
+    box-shadow: none;
 }
 
+.form-control:focus,
+.form-select:focus{
+    border-color: #3150A0;
+    box-shadow: 0 0 0 0.15rem rgba(49,80,160,0.15);
+}
+
+/* Textarea */
+textarea.form-control{
+    min-height: 120px;
+    resize: none;
+}
+
+/* Checkbox */
+.form-check-label{
+    font-size: 14px;
+    color: #374151;
+}

@@ -156,18 +156,19 @@ body{
     font-weight:500;
 }
 
-.next-btn{
+.analyze-btn{
     background:#3150A0;
     border:1px solid #3150A0;
     color:#fff;
     padding:10px 20px;
 }
-.next-btn:hover{
-     background:#fff;
+.analyze-btn:hover{
+    background:#fff;
     border:1px solid #3150A0;
     color:#3150A0;
     padding:10px 20px;
 }
+
  h2{
     color: #3150A0;
 }
@@ -200,14 +201,21 @@ body{
 }
 
 
-
-.form-label{
-    display: flex;
-    justify-content: start;
+.upload-box{
+    background:#F5F2F7;
+    border-radius:16px;
 }
 
-.buttons , .form-select{
-    width: 500px;
-    display: flex;
-    justify-content: center;
+.upload-box img{
+    margin-bottom: 25px;
+}
+
+.upload-btn{
+    border:1px dashed #3150A0;
+    background-color: #fff;
+    border-radius:10px;
+    padding:12px;
+    text-align:center;
+    color:#3150A0;
+    cursor:pointer;
 }
