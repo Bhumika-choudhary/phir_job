@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Resume Builder </title>
+
+
+    <!----------- link ----------->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style/resumebuilder2.css">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+
+    <!--------for animation------>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+
+    <!------------ choose template----------->
+
+
+
+
+    <!---------- Quick action ------------->
+
+    <section class="quick-actions-section">
+
+        <div class="container">
+
+            <div class="row align-items-center" data-aos="fade-up">
+
+                <div class="d-flex gap-4">
+                    <!-- Heading -->
+                    <div class="col-auto ">
+                        <h6 class="mb-0 fw-semibold quick-heading">
+                            Quick Actions
+                        </h6>
+                    </div>
+
+                    <!-- Divider -->
+                    <div class="col-auto">
+                        <div class="vr"></div>
+                    </div>
+
+                    <!-- Carousel -->
+
+
+                    <div id="carouselExample" class="carousel slide">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="d-flex flex-wrap align-items-center justify-content-between gap-2">
+
+                                    <a href="#" class="action-link">
+                                        <img src="./img/business_center.svg" alt="">
+                                        AI Resume Builder
+                                    </a>
+
+                                    <a href="#" class="action-link">
+                                        <img src="./img/domain.svg" alt="">
+                                        Assess Yourself
+                                    </a>
+
+                                    <a href="#" class="action-link">
+                                        <img src="./img/frame_person_mic.svg" alt="">
+                                        Mock Interview
+                                    </a>
+
+                                    <a href="#" class="action-link">
+                                        <img src="./img/school.svg" alt="">
+                                        Upskill Yourself
+                                    </a>
+
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="d-flex flex-wrap align-items-center justify-content-between gap-3">
+
+                                    <a href="#" class="action-link">
+                                        <img src="./img/adaptive_audio_mic.svg" alt="">
+                                        Counselling
+                                    </a>
+
+                                    <a href="#" class="action-link">
+                                        <img src="./img/adaptive_audio_mic.svg" alt="">
+                                        Work
+                                    </a>
+
+                                    <a href="#" class="action-link">
+                                        <img src="./img/adaptive_audio_mic.svg" alt="">
+                                        Jobs
+                                    </a>
+
+                                    <a href="#" class="action-link">
+                                        <img src="./img/adaptive_audio_mic.svg" alt="">
+                                        Companies
+                                    </a>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!---------- Quick action end ------------->
+
+
+    <!------------- top company hiring ------------>
+
+
+    <section class="py-4">
+        <div class="container" style="max-width:950px;">
+
+            <!-- Top Bar -->
+            <div class="d-flex justify-content-between align-items-center flex-wrap gap-3 mb-4">
+
+                <a href="#" class="back-link">
+                    <i class="fa-solid fa-arrow-left"></i>
+                    Back
+                </a>
+
+                <div class="d-flex gap-2">
+
+                    <button class="save-btn  rounded-pill px-3">
+                        <img src="./img/save.svg" alt="" width="24">
+                        Save Resume
+                    </button>
+
+                    <button class="next-btn rounded-pill px-4">
+                        Next Step
+                        <i class="fa-solid fa-arrow-right ms-2"></i>
+                    </button>
+
+                </div>
+
+            </div>
+
+            <h3 class="fw-bold mb-4">
+                AI Resume Builder
+            </h3>
+
+            <!-- Upload Box -->
+
+            <div class="upload-box p-4 mb-4">
+
+                <div class="row align-items-center justify-content-betwwen">
+
+                    <div class="col-md-6">
+
+                        <div class="d-flex gap-3">
+
+                            <img src="./img/picture_as_pdf (2).svg" width="40" alt="">
+
+                            <div>
+                                <h6 class="fw-bold mb-1">
+                                    Upload Existing Resume (PDF)
+                                </h6>
+
+                                <p style="font-size: 13px;">
+                                    If you have your resume, you can upload it while filling the form.
+                                </p>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="col-md-6 mt-3 mt-md-0">
+
+                        <div class="upload-btn">
+                            <img src="./img/cloud_upload.svg" width="30" alt="" class="mt-4">
+                            Upload Resume
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Accordion -->
+
+            <div class="accordion">
+
+                <!-- Personal Details -->
+
+                <div class="resume-card">
+
+                    <button class="accordion-btn" data-target="personal">
+
+                        <div class="d-flex align-items-center gap-3">
+
+                            <img src="./img/picture_as_pdf (2).svg" width="22" alt="">
+
+                            <span>Personal Details</span>
+
+                        </div>
+
+                        <img src="./img/Group 1000011499.svg" class="accordion-icon" width="18" alt="">
+
+                    </button>
+
+                    <div id="personal" class="accordion-content">
+
+                        <div class="row g-3">
+
+                            <div class="col-md-6">
+                                <label class="form-label">Full Name</label>
+                                <input type="text" class="form-control" placeholder="Enter full name">
+                            </div>
+
+                            <div class="col-md-6">
+                                <label class="form-label">Professional Title</label>
+                                <input type="text" class="form-control" placeholder="UI/UX Designer">
+                            </div>
+
+                            <div class="col-md-6">
+                                <label class="form-label">Email Address</label>
+                                <input type="email" class="form-control" placeholder="Enter email">
+                            </div>
+
+                            <div class="col-md-6">
+                                <label class="form-label">Phone Number</label>
+                                <input type="tel" class="form-control" placeholder="Enter phone number">
+                            </div>
+
+                            <div class="col-md-6">
+                                <label class="form-label">Location</label>
+                                <input type="text" class="form-control" placeholder="Ahmedabad, India">
+                            </div>
+
+                            <div class="col-md-6">
+                                <label class="form-label">LinkedIn Profile</label>
+                                <input type="url" class="form-control" placeholder="https://linkedin.com/in/username">
+                            </div>
+
+                            <div class="col-12">
+                                <label class="form-label">
+                                    Professional Summary
+                                </label>
+
+                                <textarea rows="4" class="form-control"
+                                    placeholder="Write your professional summary..."></textarea>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+                <!-- Education -->
+
+                <div class="resume-card">
+
+                    <button class="accordion-btn" data-target="education">
+
+                        <div class="d-flex align-items-center gap-3">
+                            <img src="./img/picture_as_pdf (2).svg" width="22" alt="">
+                            <span>Education</span>
+                        </div>
+
+                        <img src="./img/Group 1000011499.svg" class="accordion-icon" width="18" alt="">
+
+                    </button>
+
+                    <div id="education" class="accordion-content">
+
+                        <div class="row g-3">
+
+                            <div class="col-md-6">
+                                <label class="form-label">Degree</label>
+                                <input type="text" class="form-control" placeholder="Bachelor of Technology">
+                            </div>
+
+                            <div class="col-md-6">
+                                <label class="form-label">Field of Study</label>
+                                <input type="text" class="form-control" placeholder="Computer Science">
+                            </div>
+
+                            <div class="col-md-6">
+                                <label class="form-label">Institute / University</label>
+                                <input type="text" class="form-control" placeholder="ABC University">
+                            </div>
+
+                            <div class="col-md-6">
+                                <label class="form-label">CGPA / Percentage</label>
+                                <input type="text" class="form-control" placeholder="8.5 CGPA">
+                            </div>
+
+                            <div class="col-md-6">
+                                <label class="form-label">Start Date</label>
+                                <input type="date" class="form-control">
+                            </div>
+
+                            <div class="col-md-6">
+                                <label class="form-label">End Date</label>
+                                <input type="date" class="form-control">
+                            </div>
+
+                            <div class="col-12">
+                                <label class="form-label">Achievements / Activities</label>
+                                <textarea class="form-control" rows="4"
+                                    placeholder="Scholarships, awards, leadership roles, projects, etc."></textarea>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- Work Experience -->
+
+                <div class="resume-card">
+
+                    <button class="accordion-btn" data-target="experience">
+
+                        <div class="d-flex align-items-center gap-3">
+                            <img src="./img/picture_as_pdf (2).svg" width="22" alt="">
+                            <span>Work Experience</span>
+                        </div>
+
+                        <img src="./img/Group 1000011499.svg" class="accordion-icon" width="18" alt="">
+
+                    </button>
+
+                    <div id="experience" class="accordion-content">
+
+                        <div class="row g-3">
+
+                            <div class="col-md-6">
+                                <label class="form-label">Job Title</label>
+                                <input type="text" class="form-control" placeholder="Senior UI/UX Designer">
+                            </div>
+
+                            <div class="col-md-6">
+                                <label class="form-label">Company Name</label>
+                                <input type="text" class="form-control" placeholder="ABC Technologies">
+                            </div>
+
+                            <div class="col-md-6">
+                                <label class="form-label">Employment Type</label>
+                                <select class="form-select form-control">
+                                    <option selected disabled>Select Type</option>
+                                    <option>Full Time</option>
+                                    <option>Part Time</option>
+                                    <option>Internship</option>
+                                    <option>Freelance</option>
+                                    <option>Contract</option>
+                                </select>
+                            </div>
+
+                            <div class="col-md-6">
+                                <label class="form-label">Work Location</label>
+                                <input type="text" class="form-control" placeholder="Ahmedabad, India">
+                            </div>
+
+                            <div class="col-md-6">
+                                <label class="form-label">Start Date</label>
+                                <input type="date" class="form-control">
+                            </div>
+
+                            <div class="col-md-6">
+                                <label class="form-label">End Date</label>
+                                <input type="date" class="form-control">
+                            </div>
+
+                            <div class="col-12">
+                                <div class="form-check mb-2">
+                                    <input class="form-check-input" type="checkbox" id="currentJob">
+                                    <label class="form-check-label" for="currentJob">
+                                        I currently work here
+                                    </label>
+                                </div>
+                            </div>
+
+                            <div class="col-12">
+                                <label class="form-label">Key Responsibilities</label>
+                                <textarea rows="4" class="form-control"
+                                    placeholder="Describe your responsibilities, achievements, and contributions..."></textarea>
+                            </div>
+
+                            <div class="col-12">
+                                <label class="form-label">Achievements</label>
+                                <textarea rows="3" class="form-control"
+                                    placeholder="Awards, performance recognition, major accomplishments..."></textarea>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- Skills -->
+
+                <div class="resume-card">
+
+                    <button class="accordion-btn" data-target="skills">
+
+                        <div class="d-flex align-items-center gap-3">
+
+                            <img src="./img/picture_as_pdf (2).svg" width="22" alt="">
+
+                            <span>Skills</span>
+
+                        </div>
+
+                        <img src="./img/Group 1000011499.svg" class="accordion-icon" width="18" alt="">
+
+                    </button>
+
+                    <div id="skills" class="accordion-content">
+
+                        <div class="row g-3">
+
+                            <div class="col-md-6">
+                                <label class="form-label">Technical Skills</label>
+                                <input type="text" class="form-control" placeholder="HTML, CSS, Bootstrap, ReactJS">
+                            </div>
+
+                            <div class="col-md-6">
+                                <label class="form-label">Tools & Technologies</label>
+                                <input type="text" class="form-control" placeholder="Figma, VS Code, Git, GitHub">
+                            </div>
+
+                            <div class="col-md-6">
+                                <label class="form-label">Soft Skills</label>
+                                <input type="text" class="form-control"
+                                    placeholder="Communication, Teamwork, Leadership">
+                            </div>
+
+                            <div class="col-md-6">
+                                <label class="form-label">Languages Known</label>
+                                <input type="text" class="form-control" placeholder="English, Hindi">
+                            </div>
+
+                            <div class="col-12">
+                                <label class="form-label">Additional Skills</label>
+                                <textarea rows="3" class="form-control"
+                                    placeholder="Add any additional skills relevant to your profile..."></textarea>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="resume-card">
+
+
+                    <!-- personal project  -->
+
+                    <button class="accordion-btn" data-target="projects">
+
+                        <div class="d-flex align-items-center gap-3">
+                            <img src="./img/picture_as_pdf (2).svg" width="22" alt="">
+                            <span>Personal Projects</span>
+                        </div>
+
+                        <img src="./img/Group 1000011499.svg" class="accordion-icon" width="18" alt="">
+
+                    </button>
+
+                    <div id="projects" class="accordion-content">
+
+                        <div class="row g-3">
+
+                            <div class="col-md-6">
+                                <label class="form-label">Project Name</label>
+                                <input type="text" class="form-control" placeholder="Resume Builder">
+                            </div>
+
+                            <div class="col-md-6">
+                                <label class="form-label">Project Role</label>
+                                <input type="text" class="form-control" placeholder="Frontend Developer">
+                            </div>
+
+                            <div class="col-md-6">
+                                <label class="form-label">Technologies Used</label>
+                                <input type="text" class="form-control" placeholder="HTML, CSS, Bootstrap, JavaScript">
+                            </div>
+
+                            <div class="col-md-6">
+                                <label class="form-label">Project Duration</label>
+                                <input type="text" class="form-control" placeholder="3 Dates">
+                            </div>
+
+                            <div class="col-md-6">
+                                <label class="form-label">Live Project URL</label>
+                                <input type="url" class="form-control" placeholder="https://yourproject.com">
+                            </div>
+
+                            <div class="col-md-6">
+                                <label class="form-label">GitHub Repository</label>
+                                <input type="url" class="form-control"
+                                    placeholder="https://github.com/username/project">
+                            </div>
+
+                            <div class="col-12">
+                                <label class="form-label">Project Description</label>
+                                <textarea rows="4" class="form-control"
+                                    placeholder="Describe your project, features, responsibilities, and achievements..."></textarea>
+                            </div>
+
+                            <div class="col-12">
+                                <label class="form-label">Key Features</label>
+                                <textarea rows="3" class="form-control"
+                                    placeholder="Responsive Design, Authentication, Dashboard, API Integration, etc."></textarea>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- certificates -->
+
+                <div class="resume-card">
+
+                    <button class="accordion-btn" data-target="certifications">
+
+                        <div class="d-flex align-items-center gap-3">
+                            <img src="./img/picture_as_pdf (2).svg" width="22" alt="">
+                            <span>Certifications</span>
+                        </div>
+
+                        <img src="./img/Group 1000011499.svg" class="accordion-icon" width="18" alt="">
+
+                    </button>
+
+                    <div id="certifications" class="accordion-content">
+
+                        <div class="row g-3">
+
+                            <div class="col-md-6">
+                                <label class="form-label">Certification Name</label>
+                                <input type="text" class="form-control" placeholder="Google UX Design Certificate">
+                            </div>
+
+                            <div class="col-md-6">
+                                <label class="form-label">Issuing Organization</label>
+                                <input type="text" class="form-control" placeholder="Google / Coursera">
+                            </div>
+
+                            <div class="col-md-6">
+                                <label class="form-label">Issue Date</label>
+                                <input type="date" class="form-control">
+                            </div>
+
+                            <div class="col-md-6">
+                                <label class="form-label">Expiry Date</label>
+                                <input type="date" class="form-control">
+                            </div>
+
+                            <!-- <div class="col-md-6">
+                <label class="form-label">Credential ID</label>
+                <input type="text"
+                    class="form-control"
+                    placeholder="ABC123XYZ">
+            </div>
+
+            <div class="col-md-6">
+                <label class="form-label">Certificate URL</label>
+                <input type="url"
+                    class="form-control"
+                    placeholder="https://certificate-link.com">
+            </div> -->
+
+                            <div class="col-12">
+                                <label class="form-label">Certificate Description</label>
+                                <textarea rows="4" class="form-control"
+                                    placeholder="Describe the certification, skills learned, and achievements..."></textarea>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+
+        </div>
+    </section>
+
+
+
+
+
+    <!------------- top company hiring end ------------>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
+    <script>
+        AOS.init({
+            duration: 1000,
+            once: true
+        });
+    </script>
+
+    <script src="./script/resumebuilder2.js"></script>
+
+</body>
+
+</html>

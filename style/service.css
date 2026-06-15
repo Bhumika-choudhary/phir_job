@@ -1,0 +1,171 @@
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Helvetica Neue', sans-serif;
+    overflow-x: hidden;
+
+}
+body{
+     background: #f8f8f8;
+}
+
+
+
+
+
+/*---------Quick action section style----------*/
+
+.action-card {
+    border: 1px solid #ddd;
+    border-radius: 14px;
+    background: #fff;
+    transition: .3s;
+    height: 200px;
+}
+
+.action-card img {
+    width: 150px;
+    height: 100px;
+    object-fit: cover;
+}
+
+.action-card p {
+    font-size: 18px;
+    font-weight: 400;
+    margin-top: 5px;
+}
+
+
+
+
+.text-end a{
+    color: #3150A0;
+    border: 1px solid #3150A0;
+    /* padding: 6px 20px; */
+    border-radius: 30px;
+}
+.text-end a:hover{
+    color: #fff;
+    border: 1px solid #3150A0;
+    background-color: #3150A0;
+    /* padding: 6px 20px; */
+    border-radius: 30px;
+}
+
+
+
+/*---------- company hiring -----------*/
+
+.tool-card{
+    background: #fff;
+    border: 1px solid #E5E7EB;
+    border-radius: 12px;
+    height: 100%;
+}
+
+.tool-title{
+    font-size: 20px;
+    font-weight: 600;
+    color: rgb(14, 13, 13);
+    text-decoration: underline;
+    padding:  8px 0;
+    
+}
+
+.tool-text{
+    font-size: 14px;
+    font-weight: 400;
+    color: rgb(14, 13, 13);
+}
+
+.banner-img{
+    height: 150px;
+    object-fit: cover;
+    
+}
+
+
+/*------------ career style ---------------*/
+
+.career-box{
+    background:#edf6fd;
+    border-radius:24px;
+    padding:50px;
+}
+
+.career-box h6{
+    font-size: 36px;
+    font-weight: 700;
+}
+
+.career-box p{
+    font-size: 21px;
+    font-weight: 300;
+}
+
+.download-box{
+    max-width:420px;
+    background:#fff;
+    border-radius:50px;
+    padding:6px;
+}
+
+.input-box{
+    flex:1;
+    padding:0 14px;
+}
+
+.input-box input{
+    outline:none;
+    font-size:14px;
+}
+
+.link-btn{
+    border:1px solid #3150A0;
+    background:#3150A0;
+    color:#fff;
+    padding:12px 24px;
+    border-radius:40px;
+    font-size:14px;
+}
+.link-btn:hover{
+    border:1px solid #3150A0;
+    background:#fff;
+    color:#3150A0;
+    padding:12px 24px;
+    border-radius:40px;
+    font-size:14px;
+}
+
+.qr-card{
+    background:#fff;
+    border-radius:18px;
+    padding:18px;
+    max-width:330px;
+    box-shadow:0 8px 20px rgba(0,0,0,0.05);
+}
+.qr-card h6{
+   font-size:21px;
+   font-weight:300;
+
+}
+
+.qr-img{
+    width:120px;
+    height:120px;
+    object-fit:cover;
+}
+
+.store-img{
+    width:130px;
+    display:block;
+}
+
+
+
+
+
+

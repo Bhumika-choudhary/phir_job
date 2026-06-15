@@ -215,13 +215,8 @@ font-weight: 400;
     margin-top: 5px;
 }
 
-.action-card.active {
-    border-color: #4a6cf7;
-}
 
-.action-card a {
-    color: #4a6cf7;
-}
+
 
 .text-end a{
     color: #3150A0;

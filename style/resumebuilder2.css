@@ -1,0 +1,288 @@
+ 
+ 
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Helvetica Neue', sans-serif;
+   
+
+}
+body{
+     background: #f8f8f8;
+      overflow-x: hidden;
+
+}
+
+ 
+ 
+ 
+ /* ===============quick action style ===============*/
+
+.quick-actions-section{
+    background: #fff;
+    padding: 15px 0;
+    overflow: hidden;
+}
+
+.quick-heading{
+    padding-top: 5px;
+}
+
+ .slide{
+        height: 34px;
+    align-items: center;
+    text-align: center;
+    
+}
+
+.vr{
+    height: 30px;
+}
+
+#carouselExample{
+    position: relative;
+    padding: 0 50px;
+    width: 950px;
+}
+
+.action-link{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    text-decoration: none;
+    color: #111;
+    font-size: 14px;
+    white-space: nowrap;
+    transition: 0.3s;
+    padding-top: 5px;
+}
+
+.action-link:hover{
+    color: #3150A0;
+}
+
+.action-link img{
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+}
+
+/* Previous & Next Buttons */
+.carousel-control-prev,
+.carousel-control-next{
+    width: 34px;
+    height: 34px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #fff;
+    border: 1px solid #3150A0;
+    border-radius: 50%;
+    opacity: 1;
+}
+
+.carousel-control-prev{
+    left: 0;
+}
+
+.carousel-control-next{
+    right: 0;
+}
+
+/* Blue Icons */
+.carousel-control-prev-icon,
+.carousel-control-next-icon{
+    background-size: 14px;
+    filter: invert(28%) sepia(45%) saturate(1250%) hue-rotate(205deg) brightness(90%) contrast(90%);
+}
+
+/* Hover */
+.carousel-control-prev:hover,
+.carousel-control-next:hover{
+    background: #3150A0;
+}
+
+.carousel-control-prev:hover .carousel-control-prev-icon,
+.carousel-control-next:hover .carousel-control-next-icon{
+    filter: brightness(0) invert(1);
+}
+
+@media (max-width: 768px){
+
+    #carouselExample{
+        padding: 0 40px;
+    }
+
+    .action-link{
+        font-size: 13px;
+    }
+
+    .carousel-control-prev,
+    .carousel-control-next{
+        width: 30px;
+        height: 30px;
+    }
+}
+
+
+.update-btn{
+    background:#3150A0;
+    color:#fff;
+    font-size:13px;
+    padding:10px 24px;
+}
+
+.update-btn:hover{
+    background:#24408a;
+    color:#fff;
+}
+
+.close-btn{
+    color:black;
+    font-size:14px;
+}
+
+
+
+/*============ choose template ===========*/
+
+.back-link{
+    text-decoration:none;
+    color:#111;
+    display:flex;
+    align-items:center;
+    gap:10px;
+    font-size:16px;
+    font-weight:500;
+}
+
+.next-btn{
+    background:#3150A0;
+    border:none;
+    color:#fff;
+    padding:10px 20px;
+}
+.save-btn {
+    border: 1px solid #3150A0;
+    color: #3150A0;
+    background-color: #fff;
+    
+}
+.save-btn:hover {
+    border: 1px solid #3150A0;
+    color: #fff;
+    background-color: #3150A0;
+    
+}
+
+.save-btn:hover img{
+    filter: brightness(0) invert(1);
+}
+
+
+
+
+
+.upload-box{
+    background:#F5F2F7;
+    border-radius:16px;
+}
+
+.upload-box img{
+    margin-bottom: 25px;
+}
+
+.upload-btn{
+    border:1px dashed #3150A0;
+    background-color: #fff;
+    border-radius:10px;
+    padding:12px;
+    text-align:center;
+    color:#3150A0;
+    cursor:pointer;
+}
+
+/* Resume Cards */
+.resume-card{
+    background: #fff;
+    border: 1px solid #E5E7EB;
+    border-radius: 16px;
+    margin-bottom: 16px;
+    overflow: hidden;
+}
+
+/* Accordion Header */
+.accordion-btn{
+    width: 100%;
+    border: none;
+    background: #fff;
+    padding: 20px 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    text-align: left;
+}
+
+.accordion-btn span{
+    font-size: 16px;
+    font-weight: 600;
+    color: #111827;
+}
+
+/* Arrow */
+.accordion-icon{
+    transition: transform 0.3s ease;
+}
+
+/* Open State */
+.accordion-btn.active .accordion-icon{
+    transform: rotate(90deg);
+}
+
+/* Accordion Content */
+.accordion-content{
+    display: none;
+    padding: 24px;
+    border-top: 1px solid #E5E7EB;
+}
+
+.accordion-content.show{
+    display: block;
+}
+
+/* Form Labels */
+.form-label{
+    font-size: 14px;
+    font-weight: 500;
+    color: #374151;
+    margin-bottom: 8px;
+}
+
+/* Inputs & Select */
+.form-control,
+.form-select{
+    height: 50px;
+    border: 1px solid #D9DDE8;
+    border-radius: 12px;
+    font-size: 14px;
+    box-shadow: none;
+}
+
+.form-control:focus,
+.form-select:focus{
+    border-color: #3150A0;
+    box-shadow: 0 0 0 0.15rem rgba(49,80,160,0.15);
+}
+
+/* Textarea */
+textarea.form-control{
+    min-height: 120px;
+    resize: none;
+}
+
+/* Checkbox */
+.form-check-label{
+    font-size: 14px;
+    color: #374151;
+}
