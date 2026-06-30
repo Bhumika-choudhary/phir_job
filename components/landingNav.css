@@ -1,0 +1,69 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Helvetica Neue', sans-serif;
+    overflow-x: hidden;
+
+}
+.navbar-brand img {
+    margin-left: 100px;
+}
+
+.banner-btn .btn , .banner-btn .btn-1{
+   padding: 10px;
+   border: none;
+   background-color: white;
+}
+
+.banner-btn .btn a{
+    background: #fff;
+    border-radius: 30px;
+    border: 1px solid #3150A0;
+    color: #3150A0;
+    font-size: 14px;
+    font-weight: 400;
+    padding: 10px 20px;
+    text-decoration: none;
+}
+.banner-btn .btn a:hover{
+    background: #3150A0;
+    border-radius: 30px;
+    border: 1px solid #3150A0;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 400;
+    padding: 10px 20px;
+    text-decoration: none;
+}
+.banner-btn .btn-1 a{
+    background: #3150A0;
+    border-radius: 30px;
+    border: 1px solid #3150A0;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 400;
+    padding: 10px 20px;
+    text-decoration: none;
+}
+.banner-btn .btn-1 a:hover{
+    background: #fff;
+    border-radius: 30px;
+    border: 1px solid #3150A0;
+    color: #3150A0;
+    font-size: 14px;
+    font-weight: 400;
+    padding: 10px 20px;
+        text-decoration: none;
+}
+
+
+.navbar-collapse{
+    margin-right: 100px;
+}
+
+.navbar-nav a{
+font-size: 16px;
+font-weight: 400;
+}
