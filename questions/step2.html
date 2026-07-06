@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Industry Selection</title>
+
+    <!----------- link ----------->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="./step2.css">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+
+    <!--------for animation------>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="fixed-header bg-white py-3 border-bottom">
+        <div class="container">
+            <div class="row align-items-center">
+
+                <div class="col-6">
+                    <img src="../img/Group 134.png" alt="Logo" class="img-fluid">
+                </div>
+
+                <!-- <div class="col-6 register d-flex justify-content-end align-items-center gap-3">
+                    <small class=" content">Don't have an account?</small>
+
+                    <a href="register.html" class="btn">
+                        Login
+                    </a>
+                </div> -->
+
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Section -->
+    <section class="py-4" style="background:#F7F5FA; min-height: calc(100vh - 120px);">
+
+        <div class="container">
+
+            <!-- Back -->
+            <div class="mb-4">
+
+                <a href="" class="back-link">
+                    <i class="fa-solid fa-arrow-left me-2"></i>
+                    Back
+                </a>
+
+            </div>
+
+            <!-- Card -->
+            <div class="bg-white rounded-4 overflow-hidden shadow-sm">
+
+                <div class="row g-0">
+
+                    <!-- Sidebar -->
+                    <div class="col-lg-3">
+
+                        <div class="h-100 p-4" style="background:#EEF5FD;">
+
+                            <!-- Step 1 -->
+                            <div class="step-item active">
+                                <img src="../img/check_circle.svg" width="24" alt="">
+                                <span>Ready for change</span>
+                            </div>
+                            <div class="step-line"></div>
+
+                            <!-- Step 2 -->
+                            <div class="step-item active">
+                                <img src="../img/check_circle.svg" width="24" alt="">
+                                <span>Change industry?</span>
+                            </div>
+                            <div class="step-line"></div>
+
+                            <!-- Step 3 -->
+                            <div class="step-item">
+                                <img src="../img/check_circle (1).svg" width="24" alt="">
+                                <span>Which country</span>
+                            </div>
+                            <div class="step-line"></div>
+j
+                            <!-- Step 4 -->
+                            <div class="step-item">
+                                <img src="../img/check_circle (1).svg" width="24" alt="">
+                                <span>Which state</span>
+                            </div>
+                            <div class="step-line"></div>
+
+                            <!-- Step 5 -->
+                            <div class="step-item">
+                                <img src="../img/check_circle (1).svg" width="24" alt="">
+                                <span>Which city</span>
+                            </div>
+                            <div class="step-line"></div>
+
+                            <!-- Step 6 -->
+                            <div class="step-item">
+                                <img src="../img/check_circle (1).svg" width="24" alt="">
+                                <span>Referral</span>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <!-- Content -->
+                    <div class="col-lg-9">
+
+                        <div class="p-4 p-lg-5">
+
+                            <!-- Progress -->
+                            <div class="d-flex justify-content-between small fw-semibold mb-2">
+                                <span>Step 2 to 6</span>
+                                <span style="color:#3150A0;">40% Complete</span>
+                            </div>
+
+                            <div class="progress mb-5" style="height:3px;">
+                                <div class="progress-bar" style="width:40%; background:#3150A0;">
+                                </div>
+                            </div>
+
+                            <!-- Heading -->
+                            <div class="text-center">
+
+                                <h2 class="fw-bold mb-3">
+                                    Which industry<br>
+                                    are you open to?
+                                </h2>
+
+                                <p class="small mb-4" style="font-size:18px; font-weight:300; ">
+                                    Select up to three industries where you'd thrive.
+                                </p>
+
+                            </div>
+
+                            <!-- Search -->
+                            <div class="mx-auto mb-3" style="max-width:500px;">
+
+                                <!-- <div class="input-group">
+
+                                    <span class="input-group-text bg-white border-end-0">
+                                        <img src="./img/search.svg" width="16" alt="">
+                                    </span>
+
+                                    <input type="text" class="form-control border-start-0 border-end-0"
+                                        placeholder="Search industries">
+
+                                    <span class="input-group-text bg-white border-start-0">
+                                        <img src="./img/arrow_down.svg" width="14" alt="">
+                                    </span>
+
+                                </div> -->
+                                <div class="skills-box">
+                                    <div class="skills-input">
+                                        <img src="../img/search.svg" alt="Search" class="search-icon">
+
+                                        <input type="text" id="skillInput" class="form-control custom-input"
+                                            placeholder="Select Country">
+                                    </div>
+
+                                    <div id="skillsContainer" class="d-flex flex-wrap gap-2 mt-3"></div>
+                                </div>
+
+                            </div>
+
+                            <!-- Tags -->
+                            <!-- <div class="text-center mb-5">
+
+                                <span class="badge rounded-pill border text-primary fw-normal me-2 px-3 py-2">
+                                    Programming ✕
+                                </span>
+
+                                <span class="badge rounded-pill border text-primary fw-normal me-2 px-3 py-2">
+                                    Finance ✕
+                                </span>
+
+                                <span class="badge rounded-pill border text-primary fw-normal px-3 py-2">
+                                    Marketing ✕
+                                </span>
+
+                            </div> -->
+
+                            <!-- Buttons -->
+                            <div class="d-flex justify-content-between align-items-center mt-5">
+
+                                <a href="step1.html"
+                                    class="btn rounded-pill px-4 d-inline-flex align-items-center justify-content-center"
+                                    style="border:1px solid #3150A0;color:#3150A0;min-width:120px;text-decoration:none;">
+                                    <i class="fa-solid fa-arrow-left me-2"></i>
+                                    Previous
+                                </a>
+
+                                <a href="step3.html"
+                                    class="btn text-white rounded-pill px-4 d-inline-flex align-items-center justify-content-center"
+                                    style="background:#3150A0;border:1px solid #3150A0;min-width:120px;text-decoration:none;">
+                                    Continue
+                                    <i class="fa-solid fa-arrow-right ms-2"></i>
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+    </section>
+    <!-- Footer -->
+
+    <footer>
+        <div class="row ">
+            <div class="col-12 footer-content">
+
+                <P>
+                    © 2026 PHIR Jobs. All rights reserved. |
+                    Built for the next generation of talent.
+                </P>
+
+            </div>
+        </div>
+    </footer>
+
+
+
+    <!-- script for animation -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
+    <script>
+        AOS.init({
+            duration: 1000,
+            once: true
+        });
+    </script>
+
+    <script>
+        const skillInput = document.getElementById("skillInput");
+        const skillsContainer = document.getElementById("skillsContainer");
+
+        skillInput.addEventListener("keydown", function (e) {
+
+            if (e.key === "Enter") {
+
+                e.preventDefault();
+
+                const skill = this.value.trim();
+
+                if (skill === "") return;
+
+                const tag = document.createElement("span");
+
+                tag.className = "skill-tag";
+
+                tag.innerHTML = `
+            ${skill}
+            <i class="bi bi-x-lg"></i>
+        `;
+
+                tag.querySelector("i").addEventListener("click", function () {
+                    tag.remove();
+                });
+
+                skillsContainer.appendChild(tag);
+
+                this.value = "";
+            }
+        });
+    </script>
+
+
+</body>
+
+</html>
