@@ -138,7 +138,7 @@
                                     Which State?
                                 </h2>
 
-                                <p class="small">
+                                <p class="small" style="font-size:18px; font-weight:300; ">
                                     Select Maximum Three (Except Home State)
                                 </p>
 
@@ -147,24 +147,25 @@
                             <!-- Search -->
                             <div class="mx-auto mb-3" style="max-width:500px;">
 
-                                <div class="input-group search-box">
 
-                                    <span class="input-group-text bg-white border-0">
-                                        <i class="fa-solid fa-magnifying-glass"></i>
-                                    </span>
+                                    <div class="skills-box">
+                                        <div class="skills-input">
+                                            <img src="../img/search.svg" alt="Search" class="search-icon">
 
-                                    <input type="text" class="form-control border-0" placeholder="Select State">
+                                            <input type="text" id="skillInput" class="form-control custom-input"
+                                                placeholder="Select State">
+                                        </div>
 
-                                    <span class="input-group-text bg-white border-0">
-                                        <i class="fa-solid fa-chevron-down"></i>
-                                    </span>
+                                        <div id="skillsContainer" class="d-flex flex-wrap gap-2 mt-3"></div>
+                                    </div>
 
-                                </div>
+
+                                
 
                             </div>
 
                             <!-- Selected States -->
-                            <div class="text-center mb-5">
+                            <!-- <div class="text-center mb-5">
 
                                 <span class="badge rounded-pill border text-primary fw-normal me-2 px-3 py-2">
                                     Maharashtra ×
@@ -178,18 +179,19 @@
                                     West Bengal ×
                                 </span>
 
-                            </div>
+                            </div> -->
 
                             <!-- Buttons -->
                             <div class="d-flex justify-content-between align-items-center mt-5">
 
-                                <a href="#" class="btn btn-prev rounded-pill px-4 d-inline-flex align-items-center">
+                                <a href="step3.html"
+                                    class="btn btn-prev rounded-pill px-4 d-inline-flex align-items-center justify-content-center">
                                     <i class="fa-solid fa-arrow-left me-2"></i>
                                     Previous
                                 </a>
 
-                                <a href="#"
-                                    class="btn btn-next rounded-pill px-4 text-white d-inline-flex align-items-center">
+                                <a href="step5.html"
+                                    class="btn btn-next rounded-pill px-4 d-inline-flex align-items-center justify-content-center">
                                     Continue
                                     <i class="fa-solid fa-arrow-right ms-2"></i>
                                 </a>
@@ -239,7 +241,39 @@
         });
     </script>
 
-    <script src="./script/script.js"></script>
+    <script>
+        const skillInput = document.getElementById("skillInput");
+        const skillsContainer = document.getElementById("skillsContainer");
+
+        skillInput.addEventListener("keydown", function (e) {
+
+            if (e.key === "Enter") {
+
+                e.preventDefault();
+
+                const skill = this.value.trim();
+
+                if (skill === "") return;
+
+                const tag = document.createElement("span");
+
+                tag.className = "skill-tag";
+
+                tag.innerHTML = `
+            ${skill}
+            <i class="bi bi-x-lg"></i>
+        `;
+
+                tag.querySelector("i").addEventListener("click", function () {
+                    tag.remove();
+                });
+
+                skillsContainer.appendChild(tag);
+
+                this.value = "";
+            }
+        });
+    </script>
 
 
 </body>

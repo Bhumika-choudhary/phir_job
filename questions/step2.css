@@ -110,6 +110,49 @@ body {
     font-weight: 500;
 }
 
+.btn-prev {
+    border: 1px solid #3150A0;
+    color: #3150A0;
+    background: #fff;
+    min-width: 120px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.btn-prev:hover,
+.btn-prev:focus {
+    background: #3150A0;
+    color: #fff;
+    border-color: #3150A0;
+}
+
+.btn-prev:hover i,
+.btn-prev:focus i {
+    color: #fff;
+} 
+
+.btn-next {
+    background: #3150A0;
+    border: 1px solid #3150A0;
+    color: #fff;
+    min-width: 120px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.btn-next:hover,
+.btn-next:focus {
+    background: #fff;
+    color: #3150A0;
+    border-color: #3150A0;
+}
+
+.btn-next:hover i,
+.btn-next:focus i {
+    color: #3150A0;
+}
+
+
 @media(max-width:991px){
 
     .step-item{
