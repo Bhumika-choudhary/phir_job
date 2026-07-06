@@ -4,196 +4,77 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Which City</title>
+    <title>Referral Confirmation</title>
 
-    <!----------- link ----------->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    <link rel="stylesheet" href="./step6.css">
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Font -->
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap"
         rel="stylesheet">
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 
-    <!--------for animation------>
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- AOS -->
+    <link rel="stylesheet"
+        href="https://unpkg.com/aos@2.3.4/dist/aos.css">
+
+    <link rel="stylesheet" href="./step6.css">
 </head>
 
-<body>
+<body class="d-flex flex-column min-vh-100">
 
     <!-- Header -->
     <header class="fixed-header bg-white py-3 border-bottom">
         <div class="container">
             <div class="row align-items-center">
-
-                <div class="col-6">
+                <div class="col-12">
                     <img src="../img/Group 134.png" alt="Logo" class="img-fluid">
                 </div>
-
-                <!-- <div class="col-6 register d-flex justify-content-end align-items-center gap-3">
-                    <small class=" content">Don't have an account?</small>
-
-                    <a href="register.html" class="btn">
-                        Login
-                    </a>
-                </div> -->
-
             </div>
         </div>
     </header>
 
-    <!-- Main Section -->
-    <section class="py-4" style="background:#F7F5FA; min-height: calc(100vh - 120px);">
+    <!-- Main -->
+    <main class="flex-grow-1 py-4" style="background:#F7F5FA;">
 
         <div class="container">
 
-            <!-- Back -->
-            <div class="mb-4">
+            
+          
 
-                <a href="" class="back-link">
-                    <i class="fa-solid fa-arrow-left me-2"></i>
-                    Back
-                </a>
+            <!-- Center Card -->
+            <div class="row justify-content-center align-items-center" style="min-height:70vh; width:100%;">
 
-            </div>
+                <div class="col-lg-5 col-md-6 col-sm-8">
 
-            <!-- Card -->
-            <div class="bg-white rounded-4 overflow-hidden shadow-sm">
+                    <div class="card border-0 rounded-4 shadow-sm p-4 text-center">
 
-                <div class="row g-0">
+                        <h2 class="fw-bold mb-3">
+                            Thank you for showing
+                            interest in PHIR JOBS
+                        </h2>
 
-                    <!-- Sidebar -->
-                    <div class="col-lg-3">
+                        <p class="text-secondary small mb-4" style="font-size:18px; font-weight:300;">
+                            You have been referred by XYZ,
+                            location of XYZ kindly confirm.
+                        </p>
 
-                        <div class="h-100 p-4" style="background:#EEF5FD;">
+                        <div class="d-flex gap-3">
 
-                            <!-- Step 1 -->
-                            <div class="step-item active">
-                                <img src="../img/check_circle.svg" width="24" alt="">
-                                <span>Ready for change</span>
-                            </div>
-                            <div class="step-line"></div>
+                            <a href="#" class="btn btn-prev rounded-pill flex-fill">
+                                No/नहीं
+                            </a>
 
-                            <!-- Step 2 -->
-                            <div class="step-item active">
-                                <img src="../img/check_circle.svg" width="24" alt="">
-                                <span>Change industry?</span>
-                            </div>
-                            <div class="step-line"></div>
-
-                            <!-- Step 3 -->
-                            <div class="step-item active">
-                                <img src="../img/check_circle.svg" width="24" alt="">
-                                <span>Which country</span>
-                            </div>
-                            <div class="step-line"></div>
-
-                            <!-- Step 4 -->
-                            <div class="step-item active">
-                                <img src="../img/check_circle.svg" width="24" alt="">
-                                <span>Which state</span>
-                            </div>
-                            <div class="step-line"></div>
-
-                            <!-- Step 5 -->
-                            <div class="step-item active">
-                                <img src="../img/check_circle.svg" width="24" alt="">
-                                <span>Which city</span>
-                            </div>
-                            <div class="step-line"></div>
-
-                            <!-- Step 6 -->
-                            <div class="step-item active">
-                                <img src="../img/check_circle.svg" width="24" alt="">
-                                <span>Referral</span>
-                            </div>
-
-                        </div>
-
-                    </div>
-
-
-                    <!-- Content -->
-                 <div class="col-lg-9">
-
-                        <div class="p-4 p-lg-5">
-
-                            <!-- Progress -->
-                            <div class="d-flex justify-content-between small fw-semibold mb-2">
-                                <span>Step 6 to 6</span>
-                                <span style="color:#3150A0;">100% Complete</span>
-                            </div>
-
-                            <div class="progress mb-5" style="height:3px;">
-                                <div class="progress-bar"
-                                    style="width:100%; background:#3150A0;">
-                                </div>
-                            </div>
-
-                            <!-- Heading -->
-                            <div class="text-center mb-4">
-
-                                <h2 class="fw-bold mb-3">
-                                    Please enter the name of <br> Counsellor who has Referred you?
-                                </h2>
-
-                               
-
-                            </div>
-
-                            
-                               <!-- Form -->
-                <form>
-
-                   <div class="mb-4">
-    <label for="counsellorName" class="form-label">
-        Counsellor Name <span class="text-danger">*</span>
-    </label>
-    <input type="text" id="counsellorName" class="form-control" placeholder="Enter counsellor name">
-</div>
-
-<div class="mb-4">
-    <label for="mobile" class="form-label">
-        Counsellor Mobile Number
-    </label>
-    <input type="text" id="mobile" class="form-control" placeholder="+91 9876543210">
-</div>
-
-<div class="form-check">
-    <input class="form-check-input" type="checkbox" id="notReferred">
-    <label class="form-check-label" for="notReferred">
-        Not Referred by Anyone
-    </label>
-</div>
-
-<div class="form-check">
-    <input class="form-check-input" type="checkbox" id="referred">
-    <label class="form-check-label" for="referred">
-        Referred by Counsellor/Friend
-    </label>
-</div>
-
-                </form>
-
-                        
-                            <!-- Buttons -->
-                            <div class="d-flex justify-content-between align-items-center mt-5">
-
-                                <a href="step5.html"
-    class="btn btn-prev rounded-pill px-4 d-inline-flex align-items-center justify-content-center">
-    <i class="fa-solid fa-arrow-left me-2"></i>
-    Previous
-</a>
-
-                               <a href=""
-    class="btn btn-next rounded-pill px-4 d-inline-flex align-items-center justify-content-center">
-    Continue
-    <i class="fa-solid fa-arrow-right ms-2"></i>
-</a>
-
-                            </div>
+                            <a href="#" class="btn btn-next rounded-pill flex-fill">
+                                Yes/हाँ
+                            </a>
 
                         </div>
 
@@ -201,34 +82,32 @@
 
                 </div>
 
-                </div>
-
             </div>
 
-    </section>
+        </div>
+
+    </main>
+
     <!-- Footer -->
+    <footer class="bg-white border-top py-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
 
-    <footer>
-        <div class="row ">
-            <div class="col-12 footer-content">
+                    <small class="text-muted">
+                        © 2026 PHIR Jobs. All rights reserved. |
+                        Built for the next generation of talent.
+                    </small>
 
-                <P>
-                    © 2026 PHIR Jobs. All rights reserved. |
-                    Built for the next generation of talent.
-                </P>
-
+                </div>
             </div>
         </div>
     </footer>
 
-
-
-    <!-- script for animation -->
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-        crossorigin="anonymous"></script>
+    <!-- Bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- AOS -->
     <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
 
     <script>
@@ -237,9 +116,6 @@
             once: true
         });
     </script>
-
-    
-
 
 </body>
 

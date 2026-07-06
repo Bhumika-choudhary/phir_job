@@ -23,120 +23,14 @@ body {
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
 }
 
-.back-link{
-    
-    text-decoration:none;
-    color:black;
-    font-size:14px;
-    font-weight:500;
-    transition:.3s ease;
-   
-}
 
-.back-link:hover{
-  
-    color:#3150A0;
-}
-
-
-.step-item{
-    display: flex;
-    align-items: center;
-    gap: 15px;
-}
-
-.step-item span{
-    font-size: 16px;
-    font-weight: 500;
-    color: #1747B8;
-}
-
-.step-item.active span{
-    font-weight: 700;
-}
-
-.step-line{
-    width: 2px;
-    height: 30px;
-    background: #1747B8;
-    margin: 8px 0 8px 10px;
-}
-
-/* Form Labels */
-
-form{
-    width:100%;
-    max-width:350px;
+.card{
+    max-width:420px;
     margin:auto;
 }
 
-.form-label {
-    font-size: 14px;
-    font-weight: 500;
-    color: #1A1A1A;
-    margin-bottom: 8px;
-        
-
-}
-
-/* Input Fields */
-.form-control {
-    height: 52px;
-    border: 1px solid #D9DDE8;
-    border-radius: 12px;
-    padding: 12px 16px;
-    font-size: 14px;
-    color: #1A1A1A;
-    box-shadow: none;
-    transition: all .3s ease;
-}
-
-.form-control::placeholder {
-    color: #9CA3AF;
-    font-size: 14px;
-}
-
-.form-control:focus {
-    border-color: #3150A0;
-    box-shadow: 0 0 0 0.15rem rgba(49, 80, 160, 0.15);
-}
-
-/* Checkbox */
-.form-check {
-    margin-bottom: 14px;
-}
-
-.form-check-input {
-    width: 18px;
-    height: 18px;
-    border: 1px solid #C8CDD8;
-    border-radius: 4px;
-    cursor: pointer;
-    box-shadow: none;
-}
-
-.form-check-input:focus {
-    box-shadow: none;
-    border-color: #3150A0;
-}
-
-.form-check-input:checked {
-    background-color: #3150A0;
-    border-color: #3150A0;
-}
-
-.form-check-label {
-    font-size: 14px;
-    color: #1A1A1A;
-    margin-left: 8px;
-    cursor: pointer;
-    line-height: 18px;
-    padding-top: 4px;
-}
-
-/* Required Star */
-.text-danger {
-    color: #EF4444 !important;
+h2{
+    font-size:clamp(28px,3vw,38px);
 }
 
 .btn-prev{
