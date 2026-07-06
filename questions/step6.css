@@ -164,6 +164,33 @@ form{
 }
 
 
+
+.modal-content{
+    max-width:450px;
+    margin:auto;
+    border-radius:20px;
+}
+
+.modal-backdrop.show{
+    opacity:.45;
+}
+
+.modal h2{
+    font-size:36px;
+    font-weight:700;
+    line-height:1.3;
+}
+
+.modal p{
+    font-size:15px;
+    color:#6B7280;
+}
+
+.modal .btn{
+    height:46px;
+}
+
+
 footer{
      height:20px;
      margin: 20px 0;
